@@ -1,0 +1,12 @@
+.reviewer {
+    float: left;
+}
+
+.content .reviewer figure{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.clear{
+    clear: both;
+}

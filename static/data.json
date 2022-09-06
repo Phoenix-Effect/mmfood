@@ -1,0 +1,58 @@
+{
+    "reviewers": [
+        {
+            "name": "Suhail",
+            "photo": "saghafoo.png",
+            "bio": "Hello I am Bio"
+        },
+        {
+            "name": "Cyril",
+            "photo": "cversoza.png",
+            "bio":"Hello I am Bio"
+        },
+        {
+            "name": "Marky",
+            "bio": "Hello I am Bio"
+        }
+    ],
+
+    "restaurants": [
+        {
+            "name": "The Dhaba",
+            "tags": ["Indian", "Close to campus"]
+        },
+        {
+            "name": "MedFresh Grill",
+            "tags": ["Turkish", "Close to campus"]
+        },
+        {
+            "name": "My Pie",
+            "tags": ["Pizza", "Lunchbreak"]
+        },
+        {
+            "name": "Postino",
+            "tags": ["Bar", "Drinks after work"]
+        },
+        {
+            "name": "Pedal Haus Brewery",
+            "tags": ["Bar", "Drinks after work"]
+        },
+        {
+            "name": "Casey Moores Oyester House",
+            "tags": ["Bar", "Drinks after work"]
+        }
+    ],
+
+    "reviews": [
+        {
+            "reviewer": "Marky",
+            "restaurant": "The Dhaba",
+            "review": "Good food innit"
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "My Pie",
+            "review": "Good lunch break pizza"
+        }
+    ]
+}
