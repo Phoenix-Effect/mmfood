@@ -62,7 +62,7 @@ def get_formatted_data():
 @app.route("/")
 def home():
     context = {
-        "title": "Hello Title",
+        "title": "Food, we need food!",
         "description": "No you",
         "reviewers": data['reviewers'],
         "big_data": get_formatted_data()

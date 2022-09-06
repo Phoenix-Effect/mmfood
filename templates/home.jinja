@@ -15,10 +15,10 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Hello, Admin.
+          Hello,
         </h1>
         <h2 class="subtitle">
-          I hope you are having a great day!
+          Watercooler recommendations from folks at ASU.
         </h2>
       </div>
     </div>
@@ -87,11 +87,8 @@
               </ul>
             </aside>
 
-          </div>
-        </div>
-        <div class="column is-8">
           <div class="box content">
-            <h2>Reviewers</h2>
+            <h2>Filter by Reviewer</h2>
             {% for reviewer in reviewers %}
             <div class="reviewer">
               <figure class="image is-96x96">
@@ -102,6 +99,11 @@
             {% endfor %}
             <div class="clear"></div>
           </div>
+      
+          </div>
+        </div>
+        <div class="column is-8">
+
 
           {% for key, parent in big_data.items() %}
           <div class="box content">
