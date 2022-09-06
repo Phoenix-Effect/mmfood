@@ -1,108 +1,111 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" />
-    <title>{{ title }}</title>
-  </head>
-  <body>
-<section class="hero welcome is-small">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    Hello, Admin.
-                </h1>
-                <h2 class="subtitle">
-                    I hope you are having a great day!
-                </h2>
-            </div>
-        </div>
-    </section>
-    <section class="section">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" />
+  <title>{{ title }}</title>
+</head>
+
+<body>
+  <section class="hero welcome is-small">
+    <div class="hero-body">
       <div class="container">
-        <div class="columns">
-          <div class="column is-4">
-            <div class="box content">
-              <aside class="menu">
-      <p class="menu-label">
-        General
-      </p>
-      <ul class="menu-list">
-        <li>
-          <a>Dashboard</a>
-        </li>
-        <li>
-          <a>Customers</a>
-        </li>
-      </ul>
-      <p class="menu-label">
-        Administration
-      </p>
-      <ul class="menu-list">
-        <li>
-          <a>Team Settings</a>
-        </li>
-        <li>
-          <a class="is-active">Manage Your Team</a>
-          <ul>
-            <li>
-              <a>Members</a>
-            </li>
-            <li>
-              <a>Plugins</a>
-            </li>
-            <li>
-              <a>Add a member</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a>Invitations</a>
-        </li>
-        <li>
-          <a>Cloud Storage Environment Settings</a>
-        </li>
-        <li>
-          <a>Authentication</a>
-        </li>
-      </ul>
-      <p class="menu-label">
-        Transactions
-      </p>
-      <ul class="menu-list">
-        <li>
-          <a>Payments</a>
-        </li>
-        <li>
-          <a>Transfers</a>
-        </li>
-        <li>
-          <a>Balance</a>
-        </li>
-      </ul>
-    </aside>
-    
-            </div>
+        <h1 class="title">
+          Hello, Admin.
+        </h1>
+        <h2 class="subtitle">
+          I hope you are having a great day!
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4">
+          <div class="box content">
+            <aside class="menu">
+              <p class="menu-label">
+                General
+              </p>
+              <ul class="menu-list">
+                <li>
+                  <a>Dashboard</a>
+                </li>
+                <li>
+                  <a>Customers</a>
+                </li>
+              </ul>
+              <p class="menu-label">
+                Administration
+              </p>
+              <ul class="menu-list">
+                <li>
+                  <a>Team Settings</a>
+                </li>
+                <li>
+                  <a class="is-active">Manage Your Team</a>
+                  <ul>
+                    <li>
+                      <a>Members</a>
+                    </li>
+                    <li>
+                      <a>Plugins</a>
+                    </li>
+                    <li>
+                      <a>Add a member</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a>Invitations</a>
+                </li>
+                <li>
+                  <a>Cloud Storage Environment Settings</a>
+                </li>
+                <li>
+                  <a>Authentication</a>
+                </li>
+              </ul>
+              <p class="menu-label">
+                Transactions
+              </p>
+              <ul class="menu-list">
+                <li>
+                  <a>Payments</a>
+                </li>
+                <li>
+                  <a>Transfers</a>
+                </li>
+                <li>
+                  <a>Balance</a>
+                </li>
+              </ul>
+            </aside>
+
           </div>
-          <div class="column is-8">
-            <div class="box content">
-              <h2>Reviewers</h2>
-              {% for reviewer in reviewers %} 
-                <div class="reviewer">
-                <figure class="image is-96x96">
-                  <img class="is-rounded" alt="Photo of {{ reviewer.name }}"
+        </div>
+        <div class="column is-8">
+          <div class="box content">
+            <h2>Reviewers</h2>
+            {% for reviewer in reviewers %}
+            <div class="reviewer">
+              <figure class="image is-96x96">
+                <img class="is-rounded" alt="Photo of {{ reviewer.name }}"
                   src="static/profile/{% if reviewer.photo %}{{ reviewer.photo }}{% else %}anon.png{% endif %}">
-                </figure>
-                </div>
-              {% endfor %}
-                <div class="clear"></div>
-              </div>
+              </figure>
             </div>
+            {% endfor %}
+            <div class="clear"></div>
           </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+    </div>
+  </section>
+</body>
+
 </html>
