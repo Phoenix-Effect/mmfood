@@ -1,4 +1,12 @@
-import jinja2
+import pip
+
+def import_or_install(package):
+    try:
+        __import__(package)
+    except ImportError:
+        pip.main(['install', package])    
+
+
 import json
 from flask import Flask, render_template
 from flask_frozen import Freezer
