@@ -8,10 +8,11 @@
         {
             "name": "Cyril",
             "photo": "cversoza.png",
-            "bio":"Hello I am Bio"
+            "bio": "Hello I am Bio"
         },
         {
             "name": "Marky",
+            "photo": "anon.png",
             "bio": "Hello I am Bio"
         }
     ],
@@ -19,27 +20,27 @@
     "restaurants": [
         {
             "name": "The Dhaba",
-            "tags": ["Indian", "Close to campus"]
+            "tags": ["indian", "close to campus"]
         },
         {
             "name": "MedFresh Grill",
-            "tags": ["Turkish", "Close to campus"]
+            "tags": ["turkish", "close to campus"]
         },
         {
             "name": "My Pie",
-            "tags": ["Pizza", "Lunchbreak"]
+            "tags": ["pizza", "lunchbreak"]
         },
         {
             "name": "Postino",
-            "tags": ["Bar", "Drinks after work"]
+            "tags": ["bar", "drinks after work"]
         },
         {
             "name": "Pedal Haus Brewery",
-            "tags": ["Bar", "Drinks after work"]
+            "tags": ["bar", "drinks after work"]
         },
         {
             "name": "Casey Moores Oyester House",
-            "tags": ["Bar", "Drinks after work"]
+            "tags": ["bar", "drinks after work"]
         }
     ],
 
@@ -54,5 +55,20 @@
             "restaurant": "My Pie",
             "review": "Good lunch break pizza"
         }
-    ]
+    ],
+
+    "taxonomies": {
+        "food types": [
+            "pizza", 
+            "chicken wings"
+        ],
+        "ethnic": [
+            "indian",
+            "turkish"
+        ],
+        "desserts": [
+            "cheesecake",
+            "icecream"
+        ]
+    }
 }

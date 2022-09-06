@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma-divider.min.css') }}" />
   <title>{{ title }}</title>
 </head>
 
@@ -101,6 +102,21 @@
             {% endfor %}
             <div class="clear"></div>
           </div>
+
+          {% for key, parent in big_data.items() %}
+          <div class="box content">
+            <h2>{{ key|capitalize }}</h2>
+            {% for key2, child in parent.items() %}
+              <h3>{{ key2 }}</h3>
+              {% for review in child %}
+                {{ review.reviewer }}
+                {{ review.restaurant }}
+                {{ review.review }}
+              {% endfor %}
+            {% endfor %}
+          </div>
+          {% endfor %}
+
         </div>
       </div>
     </div>
