@@ -7,6 +7,8 @@ def import_or_install(package):
         pip.main(['install', package])    
 
 import_or_install('flask')
+import_or_install('Frozen-Flask')
+import_or_install('Flask-FlatPages')
 
 import json
 from flask import Flask, render_template
