@@ -2,40 +2,7 @@
     float: left;
 }
 
-.content .reviewer figure{
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
 .clear{
     clear: both;
 }
 
-.content .card h3 {
-    margin-bottom: 0;
-}
-
-.content .card figure {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.content .card .media:not(:last-child){
-    margin-bottom: 0;
-}
-
-.review-photo{
-    height: 48px;
-    width: 48px;
-    float: left;
-    margin-right: 15px;
-    border-radius: 32px;
-}
-
-.card-review{
-    margin-bottom: 15px;
-}
-
-.is-3 .reviewer{
-    margin-bottom: 15px;
-}

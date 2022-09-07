@@ -132,7 +132,7 @@
         {
             "reviewer": "Alice",
             "restaurant": "Pizzeria Bianco",
-            "review": "Best pizza in US (as well)."
+            "review": "Best pizza in US (as well). Can't get enough!"
         },
         {
             "reviewer": "Jeff",
@@ -147,22 +147,13 @@
         {
             "reviewer": "Jenn",
             "restaurant": "Brooklyn Vs Pizza",
-            "review": "get strommpoli instead of calzone"
+            "review": "Get strommpoli instead of calzone"
         }
     ],
 
     "taxonomies": {
         "categories": [
-            "pizza", 
-            "chicken wings"
-        ],
-        "ethnic": [
-            "indian",
-            "turkish"
-        ],
-        "desserts": [
-            "cheesecake",
-            "icecream"
+            "pizza"
         ]
     }
 }
