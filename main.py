@@ -1,11 +1,13 @@
 import pip
 import os
 
+
 def import_or_install(package):
     try:
         __import__(package)
     except ImportError:
         pip.main(['install', package])    
+
 
 if not os.environ['USER'] == 'suhail':
     import_or_install('flask')
@@ -45,17 +47,31 @@ def get_formatted_data():
                 lambda restaurant: restaurant['name'] == i['restaurant'], restaurants)
         )[0]['tags']
 
+    unique_restaurants = list(set([d['restaurant'] for d in reviews]))
+
+    unique_restaurants_with_tag = []
+
+    for i in unique_restaurants:
+        unique_restaurants_with_tag.append(list(
+            filter(
+                lambda rest: i in rest['name'], restaurants
+            )
+        )[0])
+
     frontend = OrderedDict()
 
+    # I don't understand what's going on here or why I did this
     for categories in taxonomies:
         frontend[categories] = OrderedDict()
         for cat in taxonomies[categories]:
-            frontend[categories][cat] = list(
-                filter(
-                    lambda rest: cat in rest['tags'], reviews
-                )
-            )
-            
+            frontend[categories][cat] = OrderedDict()
+            for i in unique_restaurants_with_tag:
+                restaurants_in_this_cat = list(filter(lambda rest: cat in rest['tags'], unique_restaurants_with_tag))
+                for j in restaurants_in_this_cat:
+                    frontend[categories][cat][j['name']] = OrderedDict()
+                    frontend[categories][cat][j['name']] = list(
+                        filter(lambda rest: j['name'] in rest['restaurant'], reviews))
+
     return frontend
 
 

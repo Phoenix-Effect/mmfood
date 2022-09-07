@@ -26,96 +26,86 @@
   <section class="section">
     <div class="container">
       <div class="columns">
-        <div class="column is-4">
+        <div class="column is-3">
           <div class="box content">
+
             <aside class="menu">
+              {% for key, parent in big_data.items() %}
               <p class="menu-label">
-                General
+                {{ key }}
               </p>
               <ul class="menu-list">
+                {% for key2, child in parent.items() %}
                 <li>
-                  <a>Dashboard</a>
+                  <a href="#{{ key2 }}">{{ key2 }}</a>
                 </li>
-                <li>
-                  <a>Customers</a>
-                </li>
+                {% endfor %}
               </ul>
-              <p class="menu-label">
-                Administration
-              </p>
-              <ul class="menu-list">
-                <li>
-                  <a>Team Settings</a>
-                </li>
-                <li>
-                  <a class="is-active">Manage Your Team</a>
-                  <ul>
-                    <li>
-                      <a>Members</a>
-                    </li>
-                    <li>
-                      <a>Plugins</a>
-                    </li>
-                    <li>
-                      <a>Add a member</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a>Invitations</a>
-                </li>
-                <li>
-                  <a>Cloud Storage Environment Settings</a>
-                </li>
-                <li>
-                  <a>Authentication</a>
-                </li>
-              </ul>
-              <p class="menu-label">
-                Transactions
-              </p>
-              <ul class="menu-list">
-                <li>
-                  <a>Payments</a>
-                </li>
-                <li>
-                  <a>Transfers</a>
-                </li>
-                <li>
-                  <a>Balance</a>
-                </li>
-              </ul>
+              {% endfor %}
             </aside>
 
-          <div class="box content">
-            <h2>Filter by Reviewer</h2>
+            <h3>Filter by Reviewer</h3>
             {% for reviewer in reviewers %}
             <div class="reviewer">
-              <figure class="image is-96x96">
+              <figure class="image is-64x64">
                 <img class="is-rounded" alt="Photo of {{ reviewer.name }}"
                   src="static/profile/{% if reviewer.photo %}{{ reviewer.photo }}{% else %}anon.png{% endif %}">
               </figure>
             </div>
             {% endfor %}
             <div class="clear"></div>
-          </div>
-      
+
           </div>
         </div>
-        <div class="column is-8">
-
+        <div class="column is-9">
 
           {% for key, parent in big_data.items() %}
           <div class="box content">
-            <h2>{{ key|capitalize }}</h2>
             {% for key2, child in parent.items() %}
-              <h3>{{ key2 }}</h3>
-              {% for review in child %}
-                {{ review.reviewer }}
-                {{ review.restaurant }}
-                {{ review.review }}
+            <h2 id="{{ key2 }}">{{ key2|capitalize }}</h2>
+            <div class="columns">
+
+              {% for key3, child3 in child.items() %}
+              <div class="column is-one-third">
+                <div class="card">
+                  <header class="card-header">
+                    <h3 class="card-header-title">
+                      {{ key3 }}
+                    </h3>
+                    <a href="#" class="card-header-icon" aria-label="more options">
+                      <span class="icon">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      {% for review in child3 %}
+                      <div class="content card-review">
+                        <img src="static/profile/{% if review.photo %}{{ review.photo }}{% else %}anon.png{% endif %}"
+                          class="review-photo">
+                        <div class="media-content">
+                          <p class="title is-4">{{ review.reviewer }}</p>
+                        </div>
+                        {{ review.review }}
+                      </div>
+                      <div class="clear"></div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+
+              </div>
               {% endfor %}
+
+            </div>
+
+            {# <div>
+              <div class="divider">{{ key2 }}</div>
+            </div> #}
+
             {% endfor %}
+
           </div>
           {% endfor %}
 

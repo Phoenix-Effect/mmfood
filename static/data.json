@@ -41,6 +41,10 @@
         {
             "name": "Casey Moores Oyester House",
             "tags": ["bar", "drinks after work"]
+        },
+        {
+            "name": "Spinatos Pizzeria",
+            "tags": ["pizza", "fine dining"]
         }
     ],
 
@@ -53,7 +57,17 @@
         {
             "reviewer": "Cyril",
             "restaurant": "My Pie",
-            "review": "Good lunch break pizza"
+            "review": "Good lunch break pizza, its all about that angry bird or pesto chicken for mes"
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant":"My Pie",
+            "review": "Pizza my way all the way. Used to have unlimited vegetables which meant a mound of vegetables with a bread tray. Unfortunate that it no longer exists but still solid lunch choice."
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Spinatos Pizzeria",
+            "review": "Me favorite pizza, didn't think there was such a thing as good vegetarian pizza. Their marinara sauce is wundaba, they also sell it at the restaurant and at sprouts."
         }
     ],
 
