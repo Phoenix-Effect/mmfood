@@ -12,7 +12,7 @@
         },
         {
             "name": "Marky",
-            "photo": "anon.png",
+            "photo": "marky.jpeg",
             "bio": "Hello I am Bio"
         },
         {
@@ -34,6 +34,11 @@
             "name": "Jenn",
             "photo": "jevazqu3.png",
             "bio": "From Georgia and now Queen Creek."
+        },
+        {
+            "name": "Steph",
+            "photo": "steph.png",
+            "bio": "Arizona native, from Mesa."
         }
     ],
 
@@ -85,6 +90,14 @@
         {
             "name": "Brooklyn Vs Pizza",
             "tags": ["pizza"]
+        },
+        {
+            "name": "Craft 64",
+            "tags": ["pizza"]
+        },
+        {
+            "name": "Sals Gilbert Pizza",
+            "tags": ["pizza"]
         }
     ],
 
@@ -103,6 +116,11 @@
             "reviewer": "Suhail",
             "restaurant":"My Pie",
             "review": "Pizza my way all the way. Used to have unlimited vegetables which meant a mound of vegetables with a bread tray. Unfortunate that it no longer exists but still solid lunch choice."
+        },
+        {
+            "reviewer": "Marky",
+            "restaurant":"My Pie",
+            "review": "Best New York-esque pizza I've had in Arizona so far."
         },
         {
             "reviewer": "Suhail",
@@ -148,6 +166,16 @@
             "reviewer": "Jenn",
             "restaurant": "Brooklyn Vs Pizza",
             "review": "Get strommpoli instead of calzone"
+        },
+        {
+            "reviewer": "Steph",
+            "restaurant": "Craft 64",
+            "review": "Good pizza if I may say so myself."            
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Sals Gilbert Pizza",
+            "review": "They got the good stromboni, cannot go wrong."  
         }
     ],
 
