@@ -55,6 +55,10 @@
             {% endfor %}
             <div class="clear"></div>
 
+          <div class="divider">x</div>
+          <p class="is-italic">Want to run linear regression on the reviews?</p>
+          <a href="static/data.json" class="button is-primary is-fullwidth">Download raw data source</a>
+
           </div>
         </div>
         <div class="column is-9">
@@ -63,7 +67,7 @@
           <div class="box content">
             {% for key2, child in parent.items() %}
             <h2 id="{{ key2 }}">{{ key2|capitalize }}</h2>
-            <div class="columns">
+            <div class="columns is-multiline">
 
               {% for key3, child3 in child.items() %}
               <div class="column is-one-third">
@@ -85,7 +89,7 @@
                         <img src="static/profile/{% if review.photo %}{{ review.photo }}{% else %}anon.png{% endif %}"
                           class="review-photo">
                         <div class="media-content">
-                          <p class="title is-4">{{ review.reviewer }}</p>
+                          <a class="has-text-weight-bold">{{ review.reviewer }}</a>
                         </div>
                         {{ review.review }}
                       </div>

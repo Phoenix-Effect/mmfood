@@ -14,6 +14,26 @@
             "name": "Marky",
             "photo": "anon.png",
             "bio": "Hello I am Bio"
+        },
+        {
+            "name": "Rydberg",
+            "photo": "srydberg.png",
+            "bio": "Hello I am Bio"
+        },
+        {
+            "name": "Alice",
+            "photo": "abaniel.png",
+            "bio": "So very French"
+        },
+        {
+            "name": "Jeff",
+            "photo": "jdjense9.png",
+            "bio": "Highest brow."
+        },
+        {
+            "name": "Jenn",
+            "photo": "jevazqu3.png",
+            "bio": "From Georgia and now Queen Creek."
         }
     ],
 
@@ -45,6 +65,26 @@
         {
             "name": "Spinatos Pizzeria",
             "tags": ["pizza", "fine dining"]
+        },
+        {
+            "name": "Otto Pizza & Pastry",
+            "tags": ["pizza"]
+        },
+        {
+            "name": "CIBO",
+            "tags": ["pizza", "datenight"]
+        },
+        {
+            "name": "Pizzeria Bianco",
+            "tags": ["pizza"]
+        },
+        {
+            "name": "Pomo Pizzeria",
+            "tags": ["pizza", "vegan"]
+        },
+        {
+            "name": "Brooklyn Vs Pizza",
+            "tags": ["pizza"]
         }
     ],
 
@@ -67,12 +107,52 @@
         {
             "reviewer": "Suhail",
             "restaurant": "Spinatos Pizzeria",
-            "review": "Me favorite pizza, didn't think there was such a thing as good vegetarian pizza. Their marinara sauce is wundaba, they also sell it at the restaurant and at sprouts."
+            "review": "Me favorite pizza, didn't think there was such a thing as good wegetarian pizza. Their marinara sauce is wundaba, they also sell it at the restaurant and at sprouts."
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Otto Pizza & Pastry",
+            "review": "Their weggie pizza is also banging, the dough is straight up cash money."
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Otto Pizza & Pastry",
+            "review": "What is lovely"            
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Otto Pizza & Pastry",
+            "review": "Their chef is hella French and its a family run place."            
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "CIBO",
+            "review": "Best pizza in US and also very romantic if you want to take a girl out for dinner."
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "Pizzeria Bianco",
+            "review": "Best pizza in US (as well)."
+        },
+        {
+            "reviewer": "Jeff",
+            "restaurant": "Pomo Pizzeria",
+            "review": "Best pizza in AZ. They got funky flavors like chilli honey drizzle. Hella Vegan." 
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "Pomo Pizzeria",
+            "review": "Hella good pizza." 
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Brooklyn Vs Pizza",
+            "review": "get strommpoli instead of calzone"
         }
     ],
 
     "taxonomies": {
-        "food types": [
+        "categories": [
             "pizza", 
             "chicken wings"
         ],

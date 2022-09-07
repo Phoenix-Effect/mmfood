@@ -25,13 +25,17 @@
 }
 
 .review-photo{
-    height: 64px;
-    width: 64px;
+    height: 48px;
+    width: 48px;
     float: left;
     margin-right: 15px;
     border-radius: 32px;
 }
 
 .card-review{
+    margin-bottom: 15px;
+}
+
+.is-3 .reviewer{
     margin-bottom: 15px;
 }
