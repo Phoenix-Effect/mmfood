@@ -21,7 +21,7 @@
           Hello,
         </h1>
         <h2 class="subtitle">
-          Watercooler recommendations from folks at ASU.
+          Recommendations overheard at the watercooler.
         </h2>
       </div>
     </div>
@@ -51,7 +51,7 @@
             {% for reviewer in reviewers %}
             <div class="reviewer">
               <figure class="image is-64x64 m-2">
-                <img class="is-rounded" alt="Photo of {{ reviewer.name }}"
+                <img class="is-rounded" title="{{ reviewer.name }}"
                   src="static/profile/{% if reviewer.photo %}{{ reviewer.photo }}{% else %}anon.png{% endif %}">
               </figure>
             </div>
@@ -70,9 +70,10 @@
         <div class="column is-9">
 
           {% for key, parent in big_data.items() %}
-          <div class="box content">
+            {% if not loop.first %} <div class="divider">{{ key }}</div> {% endif %}
             {% for key2, child in parent.items() %}
-            <h2 id="{{ key2 }}">{{ key2|capitalize }}</h2>
+            <div class="box content">
+            <h2 id="{{ key2 }}" class="">{{ key2|capitalize }}</h2>
             <div class="columns is-multiline">
 
               {% for key3, child3 in child.items()|sort(attribute='1.comments', reverse=True) %}
@@ -94,7 +95,7 @@
                       <article class="media ">
                         <figure class="media-left ml-0 mr-3 mt-1">
                           <p class="image is-48x48">
-                            <img class="is-rounded"
+                            <img class="is-rounded" title="{{ review.reviewer }}"
                               src="static/profile/{% if review.photo %}{{ review.photo }}{% else %}anon.png{% endif %}">
                           </p>
                         </figure>
@@ -116,11 +117,9 @@
               </div>
               {% endfor %}
 
+              </div>
             </div>
-
             {% endfor %}
-
-          </div>
           {% endfor %}
 
         </div>

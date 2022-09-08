@@ -39,6 +39,41 @@
             "name": "Steph",
             "photo": "steph.png",
             "bio": "Arizona native, from Mesa."
+        },
+        {
+            "name": "Matt",
+            "photo": "memery.jpg",
+            "bio": "Canadian but heart from Arizona, currently in New York. How you doing."            
+        },
+        {
+            "name": "Sergio",
+            "photo": "sergio.jpeg",
+            "bio": "Holla."             
+        },
+        {
+            "name": "Debbie",
+            "photo": "anon.png",
+            "bio": "USPS represent."
+        },
+        {
+            "name": "Samantha",
+            "photo": "samantha.jpg",
+            "bio": "The true inner dancer."
+        },
+        {
+            "name": "Lenora",
+            "photo": "lenora.jpg",
+            "bio": "Have lived in Arizona for quite sometime"           
+        },
+        {
+            "name": "India",
+            "photo": "india.jpg",
+            "bio": "In search of good bagels."           
+        },
+        {
+            "name": "Layla",
+            "photo": "layla.jpg",
+            "bio": "."           
         }
     ],
 
@@ -98,6 +133,50 @@
         {
             "name": "Sals Gilbert Pizza",
             "tags": ["pizza"]
+        },
+        {
+            "name": "Angels Trumpet",
+            "tags": ["bar", "chicken wings"]
+        },
+        {
+            "name": "Dirty Drummer",
+            "tags": ["bar", "chicken wings"]
+        },
+        {
+            "name": "Zesty Zzeeks",
+            "tags": ["chicken wings"]
+        },
+        {
+            "name": "Reathrey Sekong",
+            "tags": ["chicken wings", "cambodian"]
+        },
+        {
+            "name": "Lou Malnatis",
+            "tags": ["pizza"]
+        },
+        {
+            "name": "Proof Bread",
+            "tags": ["bakery"]
+        },
+        {
+            "name": "Noble Eatery",
+            "tags": ["bakery"]
+        },
+        {
+            "name": "Breadsmith",
+            "tags": ["bakery", "dessert"]
+        },
+        {
+            "name": "Mikado Sushi",
+            "tags": ["sushi"]
+        },
+        {
+            "name": "Bongiorno Bagels",
+            "tags": ["bagels"]
+        },
+        {
+            "name": "Bagel Man",
+            "tags": ["bagels"]
         }
     ],
 
@@ -176,12 +255,94 @@
             "reviewer": "Jenn",
             "restaurant": "Sals Gilbert Pizza",
             "review": "They got the good stromboni, cannot go wrong."  
+        },
+        {
+            "reviewer": "Matt",
+            "restaurant": "Angels Trumpet",
+            "review": "They got the best chicken wings and I can state that as a fact because I be from NY."
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Angels Trumpet",
+            "review": "Beer flights, big patio. Pretty dang good, fried chicken sandwich with homemade BBQ sauce. What not to like?"
+        },
+        {
+            "reviewer": "Sergio",
+            "restaurant": "Dirty Drummer",
+            "review": "Their wings are insane and huge, they got meat on that bitch. Fried and grilled."         
+        },
+        {
+            "reviewer": "Debbie",
+            "restaurant": "Zesty Zzeeks",
+            "review": "Crispy chicken wings, reheatability is high!"
+        },
+        {
+            "reviewer": "Samantha",
+            "restaurant": "Reathrey Sekong",
+            "review": "Its a Cambodian restaurant but they got the best chicken wings."
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Lou Malnatis",
+            "review": "They make the deep dish."
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Lou Malnatis",
+            "review": "My pizza place."
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Proof Bread",
+            "review": "They make the good bread."
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Noble Eatery",
+            "review": "Best bread I've had in Arizona so far though unfortunately, you have to wake up early to go to the farmers market since the store is only open on weekdays and closes at 4pm. Would also recommend their roasted brocollini."
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "Noble Eatery",
+            "review": "Delicious bread."
+        },
+        {
+            "reviewer": "Marky",
+            "restaurant": "Breadsmith",
+            "review": "They make good sourdough though unfortunately you have to go to Tucson to get it."
+        },
+        {
+            "reviewer": "Lenora",
+            "restaurant": "Mikado Sushi",
+            "review": "My absolute favorite sushi place in Arizona!."           
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Bongiorno Bagels",
+            "review": "They got that New York water filter so the water is NY water."           
+        },
+        {
+            "reviewer": "India",
+            "restaurant": "Bongiorno Bagels",
+            "review": "By my New York authority, I can declare that this is the best bagel place in Arizona."           
+        },
+        {
+            "reviewer": "Layla",
+            "restaurant": "Bagel Man",
+            "review": "Best bagels in Arizona."           
         }
     ],
 
     "taxonomies": {
-        "categories": [
-            "pizza"
+        "types": [
+            "pizza",
+            "chicken wings",
+            "sushi",
+            "bakery",
+            "bagels"
+        ],
+        "ethnic": [
+            "indian"
         ]
     }
 }
