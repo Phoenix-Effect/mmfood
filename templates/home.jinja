@@ -38,7 +38,7 @@
               <ul class="menu-list">
                 {% for key2, child in parent.items() %}
                 <li>
-                  <a href="#{{ key2 }}">{{ key2 }}</a>
+                  <a href="#{{ key2 }}">{{ key2|capitalize }}</a>
                 </li>
                 {% endfor %}
               </ul>
@@ -60,6 +60,9 @@
             <p class="is-italic">Want to run linear regression on the reviews?</p>
             <a href="static/data.json" class="button is-primary is-fullwidth">Download raw data source</a>
 
+          </div>
+          <div class="box content">
+            Contribute to this website by sending a <a href="https://github.com/Phoenix-Effect/mmfood">pull request on GitHub</a>.
           </div>
         </div>
         <div class="column is-9">
