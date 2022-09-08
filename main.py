@@ -67,8 +67,10 @@ def get_formatted_data():
             for i in unique_restaurants_with_tag:
                 restaurants_in_this_cat = list(filter(lambda rest: cat in rest['tags'], unique_restaurants_with_tag))
                 for j in restaurants_in_this_cat:
-                    frontend[categories][cat][j['name']] = OrderedDict()
-                    frontend[categories][cat][j['name']] = list(
+                    frontend[categories][cat][j['name']] = {}
+                    frontend[categories][cat][j['name']]['comments'] = len(list(
+                        filter(lambda rest: j['name'] in rest['restaurant'], reviews)))
+                    frontend[categories][cat][j['name']]['reviews'] = list(
                         filter(lambda rest: j['name'] in rest['restaurant'], reviews))
 
     return frontend
