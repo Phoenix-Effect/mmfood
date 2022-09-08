@@ -2,6 +2,7 @@ import pip
 import os
 
 
+# This is for cloudflare pages ---------
 def import_or_install(package):
     try:
         __import__(package)
@@ -13,7 +14,7 @@ if not os.environ['USER'] == 'suhail':
     import_or_install('flask')
     import_or_install('Frozen-Flask')
     import_or_install('Flask-FlatPages')
-
+# --------------------------------------
 
 import json
 from flask import Flask, render_template
@@ -22,14 +23,12 @@ from flask_flatpages import FlatPages
 from collections import OrderedDict
 import sys
 
-
 app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
 freezer = Freezer(app)
 
 data = json.load(open('static/data.json', 'r'), object_pairs_hook=OrderedDict)
-
 
 def get_formatted_data():
     taxonomies = data['taxonomies']
@@ -60,7 +59,7 @@ def get_formatted_data():
 
     frontend = OrderedDict()
 
-    # I don't understand what's going on here or why I did this
+    # I forgot what's going on here or why I did this
     for categories in taxonomies:
         frontend[categories] = OrderedDict()
         for cat in taxonomies[categories]:
@@ -79,7 +78,6 @@ def get_formatted_data():
 def home():
     context = {
         "title": "Food, we need food!",
-        "description": "No you",
         "reviewers": data['reviewers'],
         "big_data": get_formatted_data()
     }
