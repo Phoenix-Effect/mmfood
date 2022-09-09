@@ -35,12 +35,12 @@
             <aside class="menu">
               {% for key, parent in big_data.items() %}
               <p class="menu-label">
-                {{ key }}
+                {{ key|title }}
               </p>
               <ul class="menu-list">
                 {% for key2, child in parent.items()|sort %}
                 <li>
-                  <a href="#{{ key2 }}">{{ key2|capitalize }} ({{ child|length }})</a>
+                  <a href="#{{ key2 }}">{{ key2|title }} ({{ child|length }})</a>
                 </li>
                 {% endfor %}
               </ul>
@@ -73,7 +73,7 @@
             {% if not loop.first %} <div class="divider">{{ key }}</div> {% endif %}
             {% for key2, child in parent.items()|sort %}
             <div class="box content">
-            <h2 id="{{ key2 }}" class="">{{ key2|capitalize }}</h2>
+            <h2 id="{{ key2 }}" class="">{{ key2|title }}</h2>
             <div class="columns is-multiline">
 
               {% for key3, child3 in child.items()|sort(attribute='1.comments', reverse=True) %}
@@ -81,7 +81,7 @@
                 <div class="card">
                   <header class="card-header">
                     <h3 class="card-header-title m-2">
-                      {{ key3 }} 
+                      {{ key3|title }} 
                     </h3>
                     <a href="#" class="card-header-icon" aria-label="more options">
                       <span class="icon">

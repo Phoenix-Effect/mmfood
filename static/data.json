@@ -99,6 +99,11 @@
             "name": "Rita",
             "photo": "rita.png",
             "bio": "Arizona native."           
+        },
+        {
+            "name": "Vroni",
+            "photo": "veronika.jpeg",
+            "bio": "German ya"           
         }
     ],
 
@@ -378,6 +383,14 @@
         {
             "name": "Testal Mexican Kitchen",
             "tags": ["mexican"]
+        },
+        {
+            "name": "Little India Chaat",
+            "tags": ["indian"]
+        },
+        {
+            "name": "Mandi House",
+            "tags": ["saudi arabian"]
         }
     ],
 
@@ -796,6 +809,16 @@
             "reviewer": "Suhail",
             "restaurant": "Testal Mexican Kitchen",
             "review": "They got great vegetarian options and the potatoes in their burritos are magnificient. Plus its on my favorite street in Arizona."           
+        },
+        {
+            "reviewer": "Vroni",
+            "restaurant": "Little India Chaat",
+            "review": "Great Indian street food."           
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Mandi House",
+            "review": "The best (and only) Saudi restaurant and its right here in Tempe. It also has the marker for great Saudi food which is floor seating. It used to have a second restaurant YS Mandi but that restaurant now has a different owner and never changed the name."           
         }
     ],
 
@@ -821,7 +844,8 @@
             "korean",
             "mexican",
             "venezuelan",
-            "filipino"
+            "filipino",
+            "saudi arabian"
         ],
         "dining": [
             "breakfast/brunch",
