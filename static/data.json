@@ -74,6 +74,31 @@
             "name": "Layla",
             "photo": "layla.jpg",
             "bio": "."           
+        },
+        {
+            "name": "Jacob",
+            "photo": "jmbrill.jpeg",
+            "bio": "Arizona Native."           
+        },
+        {
+            "name": "Miguel",
+            "photo": "mcarillo.png",
+            "bio": "Knows good food."           
+        },
+        {
+            "name": "Trisha",
+            "photo": "trish.jpeg",
+            "bio": "Moved to Arizona and the most unfortunate time."           
+        },
+        {
+            "name": "Jackie",
+            "photo": "jackie.jpg",
+            "bio": "Arizona native, likes to run fast."           
+        },
+        {
+            "name": "Rita",
+            "photo": "rita.png",
+            "bio": "Arizona native."           
         }
     ],
 
@@ -177,6 +202,182 @@
         {
             "name": "Bagel Man",
             "tags": ["bagels"]
+        },
+        {
+            "name": "Kungfu Ramen",
+            "tags": ["ramen/noodles"]           
+        },
+        {
+            "name": "West Hut",
+            "tags": ["african"]           
+        },
+        {
+            "name": "Manna BBQ",
+            "tags": ["korean"]           
+        },
+        {
+            "name": "Noodleholics",
+            "tags": ["ramen/noodles"]           
+        },
+        {
+            "name": "Old Town Taste",
+            "tags": ["chinese"]           
+        },
+        {
+            "name": "Fly Bye",
+            "tags": ["pizza"]           
+        },
+        {
+            "name": "Tapas Papa Frita",
+            "tags": ["tapas"]
+        },
+        {
+            "name": "Mangos Mexican Cafe",
+            "tags": ["mexican"]
+        },
+        {
+            "name": "Que Chevere",
+            "tags": ["venezuelan"]
+        },
+        {
+            "name": "La Santisima",
+            "tags": ["mexican"]
+        },
+        {
+            "name": "Ramen Kagawa",
+            "tags": ["ramen/noodles" ]
+        },
+        {
+            "name": "Sushi Vibe",
+            "tags": ["sushi"]
+        },
+        {
+            "name": "Chelseas Kitchen",
+            "tags": ["dinein"]
+        },
+        {
+            "name": "Clever Koi",
+            "tags": ["pho"]
+        },
+        {
+            "name": "Teds Hot Dogs",
+            "tags": ["hotdog"]
+        },
+        {
+            "name": "Passage to India",
+            "tags": ["indian"]
+        },
+        {
+            "name": "Gallo Blanco",
+            "tags": ["mexican"]
+        },
+        {
+            "name": "Perch Brewery",
+            "tags": ["tapas"]
+        },
+        {
+            "name": "Handels Homemade Ice Cream",
+            "tags": ["icecream"]
+        },
+        {
+            "name": "Arizona Wilderness Gilbert Brewpub",
+            "tags": ["fries"]
+        },
+        {
+            "name": "Ajo Als Mexican Cafe",
+            "tags": ["mexican"]
+        },
+        {
+            "name": "Los Favoritos Taco Shop",
+            "tags": ["mexican", "breakfast/brunch"]
+        },
+        {
+            "name": "Taco Nazo",
+            "tags": ["mexican"]
+        },
+        {
+            "name": "Hudson Eatery & Bar",
+            "tags": ["fries"]
+        },
+        {
+            "name": "Farm at South Mountain",
+            "tags": ["dinein"]
+        },
+        {
+            "name": "Joes Farm Grill",
+            "tags": ["dinein", "breakfast/brunch"]
+        },
+        {
+            "name": "Toms BBQ",
+            "tags": ["bbq"]
+        },
+        {
+            "name": "Angies Lobster",
+            "tags": ["seafood"]
+        },
+        {
+            "name": "JINYA Ramen Bar",
+            "tags": ["ramen/noodles"]
+        },
+        {
+            "name": "eegees",
+            "tags": ["fries"]
+        },
+        {
+            "name": "Banhams Cheesecake",
+            "tags": ["cheesecake"]
+        },
+        {
+            "name": "Nishikawa Ramen",
+            "tags": ["ramen/noodles"]
+        },
+        {
+            "name": "Casa Filipina Bakeshop",
+            "tags": ["filipino"]
+        },
+        {
+            "name": "Lutong Bahay",
+            "tags": ["filipino"]
+        },
+        {
+            "name": "Freddys Frozen Custard & Steakburgers",
+            "tags": ["fries"]
+        },
+        {
+            "name": "Jollibee",
+            "tags": ["filipino", "fried chicken"]
+        },
+        {
+            "name": "Zinburger",
+            "tags": ["burgers"]
+        },
+        {
+            "name": "Kopps Frozen Custard",
+            "tags": ["burgers"]
+        },
+        {
+            "name": "Woodlands Vegetarian South Indian Kitchen",
+            "tags": ["indian"]
+        },
+        {
+            "name": "Gen Korean BBQ House",
+            "tags": ["korean"]
+        },
+        {
+            "name": "Topo Arizona",
+            "tags": ["dinein"]
+        },
+        {
+            "name": "Cherryblossom Noodle cafe",
+            "tags": ["ramen/noodles"]
+        },
+        {
+            "name": "Los Taquitos",
+            "tags": ["mexican"]
+        },
+        {
+            "name": "Testal Mexican Kitchen",
+            "tags": ["mexican"]
         }
     ],
 
@@ -324,12 +525,277 @@
         {
             "reviewer": "India",
             "restaurant": "Bongiorno Bagels",
-            "review": "By my New York authority, I can declare that this is the best bagel place in Arizona."           
+            "review": "By my authority of my New York hat, I can declare that this is the best bagel place in Arizona."           
         },
         {
             "reviewer": "Layla",
             "restaurant": "Bagel Man",
             "review": "Best bagels in Arizona."           
+        },
+        {
+            "reviewer": "Lenora",
+            "restaurant": "Kungfu Ramen",
+            "review": "A delightful place and must try, the chef pulls noodles by hand."           
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "West Hut",
+            "review": "Restaurant feels out of place among the offices around it but they got delicious plantains."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Manna BBQ",
+            "review": "We'll go there one day."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Noodleholics",
+            "review": "Their beef shank noodles are bomb."           
+        },
+        {
+            "reviewer": "Jacob",
+            "restaurant": "Old Town Taste",
+            "review": "Absolute favorite Chinese place in Arizona."           
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Fly Bye",
+            "review": "Detroit style pizza from the same folks who created Zin Burger."           
+        },
+        {
+            "reviewer": "Steph",
+            "restaurant": "Tapas Papa Frita",
+            "review": "One of the few tapas options in Arizona."           
+        },
+        {
+            "reviewer": "Steph",
+            "restaurant": "Mangos Mexican Cafe",
+            "review": "They got really good fresh juices."           
+        },
+        {
+            "reviewer": "Steph",
+            "restaurant": "Que Chevere",
+            "review": "Great Venezuelan place."           
+        },
+        {
+            "reviewer": "Steph",
+            "restaurant": "La Santisima",
+            "review": "They got bigly salsa."           
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "Ramen Kagawa",
+            "review": "They got good vegeterian options."           
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "Sushi Vibe",
+            "review": "Really fresh, sushi of higher quality than usual."           
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "Chelseas Kitchen",
+            "review": "Complex, subtle flavor, very good fish, I was impressed! Nice terrace, good for dates."           
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "Clever Koi",
+            "review": "Cheap, high quality and delicious."           
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Teds Hot Dogs",
+            "review": "So good, they are charboiled."           
+        },
+        {
+            "reviewer": "Miguel",
+            "restaurant": "Passage to India",
+            "review": "Best Indian food, got lamb tikka massala with rice and two garlic butter naans, delightful."           
+        },
+        {
+            "reviewer": "Trisha",
+            "restaurant": "Gallo Blanco",
+            "review": "Great Mexican food and they got a great bread pudding."           
+        },
+        {
+            "reviewer": "Jackie",
+            "restaurant": "Perch Brewery",
+            "review": "Good tapas during happy hour."           
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Noble Eatery",
+            "review": "Great bread in Arizona."           
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Handels Homemade Ice Cream",
+            "review": "They make great handmade ice creams."           
+        },
+        {
+            "reviewer": "Jackie",
+            "restaurant": "Arizona Wilderness Gilbert Brewpub",
+            "review": "Their rosemary fries are banging."           
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Ajo Als Mexican Cafe",
+            "review": "Good Mexican food."           
+        },
+        {
+            "reviewer": "Lenora",
+            "restaurant": "Los Favoritos Taco Shop",
+            "review": "Good breakfast burritos!"           
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Taco Nazo",
+            "review": "They make tortillas with lard. Their posole soup is good, I just get bean cheese and rice burrito. Carne Asada is so good!"           
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Hudson Eatery & Bar",
+            "review": "Best fries according to Phoenix New times."           
+        },
+        {
+            "reviewer": "Lenora",
+            "restaurant": "Farm at South Mountain",
+            "review": "You can walk around and meet chickens!"           
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Joes Farm Grill",
+            "review": "Great chicken sandwiches, love going there for breakfast"           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Joes Farm Grill",
+            "review": "It has become my weekend go to for me and the family."           
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Toms BBQ",
+            "review": "Their pulled pork sandwiches are so good."           
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Angies Lobster",
+            "review": "Its a food truck and their price to lobster size ratio is off the charts."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "JINYA Ramen Bar",
+            "review": "This is the number 1 ramen place on my list."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "eegees",
+            "review": "Their fries are hella sturdy."           
+        },
+        {
+            "reviewer": "Rita",
+            "restaurant": "Banhams Cheesecake",
+            "review": "By far the best cheesecake in whole of Arizona, cannot be proved wrong."           
+        },
+        {
+            "reviewer": "Lenora",
+            "restaurant": "Banhams Cheesecake",
+            "review": "Can confirm, best cheesecake in Arizona."           
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Banhams Cheesecake",
+            "review": "Was worth standing in line for."           
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Banhams Cheesecake",
+            "review": "Most certainly the best cheesecake in Arizona."           
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Banhams Cheesecake",
+            "review": "That cheesecake was really good."           
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "Banhams Cheesecake",
+            "review": "Cheesecake."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Nishikawa Ramen",
+            "review": "My number 2 ramen place in Arizona."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Casa Filipina Bakeshop",
+            "review": "Great Filipino food, only second to Lutong Bahai."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Lutong Bahay",
+            "review": "Exceptional food, they got the pig face meat. Service isn't great but would recommend takeout."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Freddys Frozen Custard & Steakburgers",
+            "review": "They got the good french fries."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Jollibee",
+            "review": "A Jollibee in a neighborhood is a sign of a booming Filipino community nearby."           
+        },
+        {
+            "reviewer": "Jackie",
+            "restaurant": "Zinburger",
+            "review": "My #1 go to."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Kopps Frozen Custard",
+            "review": "Best burgers in AZ."           
+        },
+        {
+            "reviewer": "Marky",
+            "restaurant": "Woodlands Vegetarian South Indian Kitchen",
+            "review": "Great Indian dosa place."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Gen Korean BBQ House",
+            "review": "Good Korean BBQ."           
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Topo Arizona",
+            "review": "Great dine-in restaurant in Gilbert."           
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Cherryblossom Noodle cafe",
+            "review": "Great noodles place."           
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Cherryblossom Noodle cafe",
+            "review": "Cozy little place for noodles, their tofu was great."           
+        },
+        {
+            "reviewer": "Miguel",
+            "restaurant": "Los Taquitos",
+            "review": "They got great carne asada nachos."           
+        },
+        {
+            "reviewer": "Miguel",
+            "restaurant": "Testal Mexican Kitchen",
+            "review": "Great burrito place."           
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Testal Mexican Kitchen",
+            "review": "They got great vegetarian options and the potatoes in their burritos are magnificient. Plus its on my favorite street in Arizona."           
         }
     ],
 
@@ -338,11 +804,33 @@
             "pizza",
             "chicken wings",
             "sushi",
+            "ramen/noodles",
+            "fries",
             "bakery",
-            "bagels"
+            "bagels",
+            "pho",
+            "bbq",
+            "seafood",
+            "fried chicken",
+            "burgers"
         ],
         "ethnic": [
-            "indian"
+            "african",
+            "chinese",
+            "indian",
+            "korean",
+            "mexican",
+            "venezuelan",
+            "filipino"
+        ],
+        "dining": [
+            "breakfast/brunch",
+            "tapas",
+            "dinein"
+        ],
+        "dessert": [
+            "icecream",
+            "cheesecake"
         ]
     }
 }

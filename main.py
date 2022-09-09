@@ -41,10 +41,13 @@ def get_formatted_data():
             filter(
                 lambda person: person['name'] == i['reviewer'], bios)
         )[0]['photo']
-        i['tags'] = list(
-            filter(
-                lambda restaurant: restaurant['name'] == i['restaurant'], restaurants)
-        )[0]['tags']
+        try:
+            i['tags'] = list(
+                filter(
+                    lambda restaurant: restaurant['name'] == i['restaurant'], restaurants)
+            )[0]['tags']
+        except:
+            print('No tags in ', i)
 
     unique_restaurants = list(set([d['restaurant'] for d in reviews]))
 
