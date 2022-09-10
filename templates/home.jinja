@@ -1,17 +1,6 @@
-<!doctype html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script async defer data-domain="mmfood.phoenixeffect.me" src="https://stenograph.phoenixeffect.me/js/plausible.js"></script>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma-divider.min.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" />
-  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
-  <title>{{ title }}</title>
-</head>
+
+{% include 'head.jinja' %}
 
 <body>
   <section class="hero welcome is-small">
@@ -51,9 +40,9 @@
             {% for reviewer in reviewers %}
             <div class="reviewer">
               <figure class="image is-64x64 m-2">
-                <img class="is-rounded" title="{{ reviewer.name }}"
+                <a href="{{ reviewer.name }}"><img class="is-rounded" title="{{ reviewer.name }}"
                   src="static/profile/{% if reviewer.photo %}{{ reviewer.photo }}{% else %}anon.png{% endif %}">
-              </figure>
+              </figure></a>
             </div>
             {% endfor %}
             <div class="clear"></div>
@@ -95,14 +84,16 @@
                       <article class="media ">
                         <figure class="media-left ml-0 mr-3 mt-1">
                           <p class="image is-48x48">
+                          <a href="{{ review.reviewer }}">
                             <img class="is-rounded" title="{{ review.reviewer }}"
                               src="static/profile/{% if review.photo %}{{ review.photo }}{% else %}anon.png{% endif %}">
+                          </a>
                           </p>
                         </figure>
                         <div class="media-content">
                           <div class="content">
                             <p>
-                              <a class="has-text-weight-bold">{{ review.reviewer }} </a>
+                              <a href="{{ review.reviewer }}" class="has-text-weight-bold">{{ review.reviewer }} </a>
                               <br>
                               {{ review.review }}
                             </p>

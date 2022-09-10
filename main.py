@@ -30,6 +30,11 @@ freezer = Freezer(app)
 
 data = json.load(open('static/data.json', 'r'), object_pairs_hook=OrderedDict)
 
+taxonomies = data['taxonomies']
+reviews = data['reviews']
+bios = data['reviewers']
+restaurants = data['restaurants']
+
 def get_formatted_data():
     taxonomies = data['taxonomies']
     reviews = data['reviews']
@@ -79,6 +84,14 @@ def get_formatted_data():
     return frontend
 
 
+def get_profile_reviews(username):
+    joined = []
+    filtered_reviews = list(filter(lambda review: username in review['reviewer'], reviews))
+    for rev in filtered_reviews:
+        rev['tags'] = list(filter(lambda rest: rest['name']  in rev['restaurant'], restaurants))[0]['tags']
+
+    return filtered_reviews
+
 @app.route("/")
 def home():
     context = {
@@ -88,6 +101,21 @@ def home():
     }
     return render_template( "home.jinja", **context )
 
+@app.route("/<username>/index.html", methods=['GET'])
+def profile(username):
+    context = {
+        "title": f'Recommendations by {username}',
+        "profile": list(filter(lambda person: person['name'] == username, bios))[0],
+        "reviews": get_profile_reviews(username)
+    }
+    return render_template( "profile.jinja", **context )
+
+@freezer.register_generator
+def profile():
+    for i in bios:
+        yield {
+            'username': i['name']
+         }
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "build":

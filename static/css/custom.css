@@ -9,3 +9,7 @@
 .card {
     width: 100%;
 }
+
+.card-footer-item.taggers {
+    justify-content: start;
+}
