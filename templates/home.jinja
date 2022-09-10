@@ -36,11 +36,11 @@
               {% endfor %}
             </aside>
 
-            <h3>Conversers</h3>
+            <h3>Filter by person</h3>
             {% for reviewer in reviewers %}
             <div class="reviewer">
               <figure class="image is-64x64 m-2">
-                <a href="{{ reviewer.name }}"><img class="is-rounded" title="{{ reviewer.name }}"
+                <a href="{{ reviewer.name }}"><img class="is-rounded" title="{{ reviewer.name }} - {{ reviewer.bio }}"
                   src="static/profile/{% if reviewer.photo %}{{ reviewer.photo }}{% else %}anon.png{% endif %}">
               </figure></a>
             </div>

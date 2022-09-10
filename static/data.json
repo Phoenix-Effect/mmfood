@@ -3,27 +3,27 @@
         {
             "name": "Suhail",
             "photo": "saghafoo.png",
-            "bio": "Hello I am Bio"
+            "bio": "I am not from around but boy do I not know good food. I do things at CEM."
         },
         {
             "name": "Cyril",
             "photo": "cversoza.png",
-            "bio": "Hello I am Bio"
+            "bio": "Cyrilla from Manilla who loves a thrilla. PhD student in Pfeifer lab."
         },
         {
             "name": "Marky",
             "photo": "marky.jpeg",
-            "bio": "Hello I am Bio"
+            "bio": "The coconut man with immeasurable heat tolerance. From New York, PhD student in Pfeifer lab."
         },
         {
             "name": "Rydberg",
             "photo": "srydberg.png",
-            "bio": "Hello I am Bio"
+            "bio": "Canadian but Arizona native, how does that work? Research technician at Huijban lab."
         },
         {
             "name": "Alice",
             "photo": "abaniel.png",
-            "bio": "So very French"
+            "bio": "So very French. Postdoc in Smacklab."
         },
         {
             "name": "Jeff",
@@ -38,17 +38,17 @@
         {
             "name": "Steph",
             "photo": "steph.png",
-            "bio": "Arizona native, from Mesa."
+            "bio": "Arizona native, from Mesa. Was a postdoc in Trumble lab."
         },
         {
             "name": "Matt",
             "photo": "memery.jpg",
-            "bio": "Canadian but heart from Arizona, currently in New York. How you doing."            
+            "bio": "Canadian but heart from Arizona, currently in New York. How you doing. Ex postdoc in Stonelab."            
         },
         {
             "name": "Sergio",
             "photo": "sergio.jpeg",
-            "bio": "Holla."             
+            "bio": "Holla. PhD student in Huijbenlab."             
         },
         {
             "name": "Debbie",
@@ -58,7 +58,7 @@
         {
             "name": "Samantha",
             "photo": "samantha.jpg",
-            "bio": "The true inner dancer."
+            "bio": "The true inner dancer, Phoenix native."
         },
         {
             "name": "Lenora",
@@ -73,27 +73,27 @@
         {
             "name": "Layla",
             "photo": "layla.jpg",
-            "bio": "."           
+            "bio": "Lab tech in Smacklab."           
         },
         {
             "name": "Jacob",
             "photo": "jmbrill.jpeg",
-            "bio": "Arizona Native."           
+            "bio": "Arizona Native. Bio informatives things in Buetowlab."           
         },
         {
             "name": "Miguel",
             "photo": "mcarillo.png",
-            "bio": "Knows good food."           
+            "bio": "Knows good food. Sols facilities."           
         },
         {
             "name": "Trisha",
             "photo": "trish.jpeg",
-            "bio": "Moved to Arizona and the most unfortunate time."           
+            "bio": "Moved to Arizona and the most unfortunate time. Expostdoc in Smacklab."           
         },
         {
             "name": "Jackie",
             "photo": "jackie.jpg",
-            "bio": "Arizona native, likes to run fast."           
+            "bio": "Arizona native, likes to run fast. OG member of CEM."           
         },
         {
             "name": "Rita",
@@ -103,7 +103,7 @@
         {
             "name": "Vroni",
             "photo": "veronika.jpeg",
-            "bio": "German ya"           
+            "bio": "Ze German."           
         }
     ],
 
