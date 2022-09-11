@@ -1,5 +1,3 @@
-
-
 {% include 'head.jinja' %}
 
 <body>
@@ -41,36 +39,37 @@
             <div class="reviewer">
               <figure class="image is-64x64 m-2">
                 <a href="{{ reviewer.name }}"><img class="is-rounded" title="{{ reviewer.name }} - {{ reviewer.bio }}"
-                  src="static/profile/{% if reviewer.photo %}{{ reviewer.photo }}{% else %}anon.png{% endif %}">
+                    src="static/profile/{% if reviewer.photo %}{{ reviewer.photo }}{% else %}anon.png{% endif %}">
               </figure></a>
             </div>
             {% endfor %}
             <div class="clear"></div>
 
             <div class="divider">x</div>
-            <p class="is-italic">Want to run linear regression on the reviews?</p>
+            <p class="is-italic"></p>
             <a href="static/data.json" class="button is-primary is-fullwidth">Download raw data source</a>
 
           </div>
           <div class="box content">
-            Contribute to this website by sending a <a href="https://github.com/Phoenix-Effect/mmfood">pull request on GitHub</a>.
+            Contribute to this website by sending a <a href="https://github.com/Phoenix-Effect/mmfood">pull request on
+              GitHub</a>.
           </div>
         </div>
         <div class="column is-9">
 
           {% for key, parent in big_data.items() %}
-            {% if not loop.first %} <div class="divider">{{ key }}</div> {% endif %}
-            {% for key2, child in parent.items()|sort %}
-            <div class="box content">
+          {% if not loop.first %} <div class="divider">{{ key }}</div> {% endif %}
+          {% for key2, child in parent.items()|sort %}
+          <div class="box content">
             <h2 id="{{ key2 }}" class="">{{ key2|title }}</h2>
             <div class="columns is-multiline">
 
               {% for key3, child3 in child.items()|sort(attribute='1.comments', reverse=True) %}
               <div class="column is-one-third-desktop is-half-tablet is-full-mobile is-flex is-narrow">
-                <div class="card">
+                <div class="card equal-height">
                   <header class="card-header">
-                    <h3 class="card-header-title m-2">
-                      {{ key3|title }} 
+                    <h3 class="card-header-title m-2 has-text-success">
+                      {{ key3|title }}
                     </h3>
                     <a href="#" class="card-header-icon" aria-label="more options">
                       <span class="icon">
@@ -84,10 +83,10 @@
                       <article class="media ">
                         <figure class="media-left ml-0 mr-3 mt-1">
                           <p class="image is-48x48">
-                          <a href="{{ review.reviewer }}">
-                            <img class="is-rounded" title="{{ review.reviewer }}"
-                              src="static/profile/{% if review.photo %}{{ review.photo }}{% else %}anon.png{% endif %}">
-                          </a>
+                            <a href="{{ review.reviewer }}">
+                              <img class="is-rounded" title="{{ review.reviewer }}"
+                                src="static/profile/{% if review.photo %}{{ review.photo }}{% else %}anon.png{% endif %}">
+                            </a>
                           </p>
                         </figure>
                         <div class="media-content">
@@ -103,14 +102,25 @@
                       {% endfor %}
                     </div>
                   </div>
+                  <footer class="card-footer">
+                    <div class="card-footer-item taggers">
+                      <div class="tags">
+                        {% for g in child3.reviews[0]['tags'] %}
+                        <span class="tag is-primary mr-2">
+                          {{ g }}
+                        </span>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </footer>
                 </div>
 
               </div>
               {% endfor %}
 
-              </div>
             </div>
-            {% endfor %}
+          </div>
+          {% endfor %}
           {% endfor %}
 
         </div>

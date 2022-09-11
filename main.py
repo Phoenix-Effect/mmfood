@@ -21,6 +21,7 @@ from flask import Flask, render_template
 from flask_frozen import Freezer
 from flask_flatpages import FlatPages
 from collections import OrderedDict
+import pprint 
 import sys
 
 app = Flask(__name__)
@@ -29,6 +30,7 @@ pages = FlatPages(app)
 freezer = Freezer(app)
 
 data = json.load(open('static/data.json', 'r'), object_pairs_hook=OrderedDict)
+pp = pprint.PrettyPrinter(indent=4)
 
 taxonomies = data['taxonomies']
 reviews = data['reviews']
@@ -101,12 +103,23 @@ def home():
     }
     return render_template( "home.jinja", **context )
 
-@app.route("/<username>/index.html", methods=['GET'])
+@app.route("/<username>/", methods=['GET'], strict_slashes=False)
 def profile(username):
+
+    filtered = []
+    formatted = get_formatted_data()
+
+    for i in formatted:
+        for j in formatted[i]:
+            for k in formatted[i][j]:
+                for l in formatted[i][j][k]['reviews']:
+                    if username == l['reviewer']:
+                        filtered.append(formatted[i][j][k])
+
     context = {
         "title": f'Recommendations by {username}',
         "profile": list(filter(lambda person: person['name'] == username, bios))[0],
-        "reviews": get_profile_reviews(username)
+        "big_data": filtered
     }
     return render_template( "profile.jinja", **context )
 
