@@ -56,6 +56,20 @@
           </div>
         </div>
         <div class="column is-9">
+          <section class="hero mb-5 is-primary with-background is-medium">
+            <div class="hero-body">
+              <div class="columns">
+                <div class="column is-three-quarters-desktop is-full-tablet is-full-mobile">
+                  <p class="title">
+                    The Watercooler
+                  </p>
+                  <p class="subtitle">
+                    Recommendations from folks affiliated with Center for Evolution and Medicine (and their moms!)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {% for key, parent in big_data.items() %}
           {% if not loop.first %} <div class="divider">{{ key }}</div> {% endif %}
