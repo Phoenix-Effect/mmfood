@@ -395,6 +395,10 @@
         {
             "name": "Diary Queen",
             "tags": ["icecream"]
+        },
+        {
+            "name": "Jinya Ramen",
+            "tags": ["ramen/noodles"]
         }
     ],
 
@@ -843,6 +847,11 @@
             "reviewer": "Suhail",
             "restaurant": "Clever Koi",
             "review": "Love the shape of their bowls."
+        },
+        {
+            "reviewer": "Jackie",
+            "restaurant": "Jinya Ramen",
+            "review": "They are like trendy fun ramen but also very tasty."
         }
     ],
 
