@@ -399,6 +399,10 @@
         {
             "name": "Jinya Ramen",
             "tags": ["ramen/noodles"]
+        },
+        {
+            "name": "Houstan Hot Chicken",
+            "tags": ["fried chicken", "fries"]
         }
     ],
 
@@ -852,6 +856,16 @@
             "reviewer": "Jackie",
             "restaurant": "Jinya Ramen",
             "review": "They are like trendy fun ramen but also very tasty."
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Houstan Hot Chicken",
+            "review": "Phenomenal fries, sauce was flavorful but a bit watery so there is potential to make a mess. Chicken was is good, their spiciness levels have a corresponding scoville heat units so there is a quantative side which is very much appreciated. I went with liftoff level (600k sku) and was very pleased. Would recommend and come again!"            
+        },
+        {
+            "reviewer": "Marky",
+            "restaurant": "Houstan Hot Chicken",
+            "review": "Was expensive, like $20 for a sandwich, fries and drink."            
         }
     ],
 
