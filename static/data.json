@@ -8,12 +8,14 @@
         {
             "name": "Cyril",
             "photo": "cversoza.png",
-            "bio": "Cyrilla from Manilla who loves a thrilla. PhD student in Pfeifer lab."
+            "bio": "Cyrilla from Manilla who loves a thrilla. PhD student in Pfeifer lab.",
+            "heat": true
         },
         {
             "name": "Marky",
             "photo": "marky.jpeg",
-            "bio": "The coconut man with immeasurable heat tolerance. From New York, PhD student in Pfeifer lab."
+            "bio": "The coconut man with immeasurable heat tolerance. From New York, PhD student in Pfeifer lab.",
+            "heat": true
         },
         {
             "name": "Rydberg",
@@ -23,7 +25,8 @@
         {
             "name": "Alice",
             "photo": "abaniel.png",
-            "bio": "So very French. Postdoc in Smacklab."
+            "bio": "So very French. Postdoc in Smacklab.",
+            "veg": true
         },
         {
             "name": "Jeff",
@@ -63,12 +66,13 @@
         {
             "name": "Lenora",
             "photo": "lenora.jpg",
-            "bio": "Have lived in Arizona for quite sometime"           
+            "bio": "Have lived in Arizona for quite sometime",
+            "heat": true          
         },
         {
             "name": "India",
             "photo": "india.jpg",
-            "bio": "In search of good bagels."           
+            "bio": "In search of good bagels."
         },
         {
             "name": "Layla",
@@ -83,7 +87,8 @@
         {
             "name": "Miguel",
             "photo": "mcarillo.png",
-            "bio": "Knows good food. Sols facilities."           
+            "bio": "Knows good food. Sols facilities.",
+            "heat": true
         },
         {
             "name": "Trisha",
@@ -103,7 +108,8 @@
         {
             "name": "Vroni",
             "photo": "veronika.jpeg",
-            "bio": "Ze German."           
+            "bio": "Ze German.",
+            "heat": true
         }
     ],
 

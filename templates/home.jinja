@@ -40,10 +40,21 @@
               <figure class="image is-64x64 m-2">
                 <a href="{{ reviewer.name }}"><img class="is-rounded" title="{{ reviewer.name }} - {{ reviewer.bio }}"
                     src="static/profile/{% if reviewer.photo %}{{ reviewer.photo }}{% else %}anon.png{% endif %}">
+                    {% if reviewer.heat %}
+                    <span title="High heat tolerance" class="badge is-danger is-bottom-right">x</span>
+                    {% endif %}
+                    {% if reviewer.veg %}
+                    <span title="Vegetarian" class="badge is-success is-bottom-right">x</span>
+                    {% endif %}
               </figure></a>
             </div>
             {% endfor %}
             <div class="clear"></div>
+
+            <p class="is-size-7 is-italic mt-2 ml-2">
+              <span class="dot has-background-danger mr-2"></span><span> High heat tolerance</span><br>
+              <span class="dot has-background-success mr-2"></span><span> Vegetarian</span>
+            </p>
 
             <div class="divider">x</div>
             <p class="is-italic"></p>

@@ -28,3 +28,10 @@
     background-image: url('/static/darwin-slider-1140-333.jpg');
     background-size: cover;
 }
+
+.dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
