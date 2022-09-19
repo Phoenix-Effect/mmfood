@@ -20,7 +20,8 @@
         {
             "name": "Rydberg",
             "photo": "srydberg.png",
-            "bio": "Canadian but Arizona native, how does that work? Research technician at Huijban lab."
+            "bio": "Canadian but Arizona native, how does that work? Research technician at Huijban lab.",
+            "heat": true
         },
         {
             "name": "Alice",
@@ -409,6 +410,18 @@
         {
             "name": "Houstan Hot Chicken",
             "tags": ["fried chicken", "fries"]
+        },
+        {
+            "name": "Xtreme Bean Coffee",
+            "tags": ["coffee", "hangout"]
+        },
+        {
+            "name": "Brick Road Coffee",
+            "tags": ["coffee" ]
+        },
+        {
+            "name": "Burger Rush",
+            "tags": ["burgers"]
         }
     ],
 
@@ -872,6 +885,21 @@
             "reviewer": "Marky",
             "restaurant": "Houstan Hot Chicken",
             "review": "Was expensive, like $20 for a sandwich, fries and drink."            
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Xtreme Bean Coffee",
+            "review": "Its big, cheap, cool place to hang out, decent coffee. They all very nice people, they got bagels and cheesecakes."
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Brick Road Coffee",
+            "review": "I didn't know it existed, then i went there and went damn it is really good."
+        },
+        {
+            "reviewer": "Lenora",
+            "restaurant": "Burger Rush",
+            "review": "Local burger joint for charboiled burgers, used to love their fried brocalli! They also do impossible burgers."
         }
     ],
 
@@ -887,9 +915,10 @@
             "bbq",
             "seafood",
             "fried chicken",
-            "burgers"
+            "burgers",
+            "coffee"
         ],
-        "ethnic": [
+        "country": [
             "african",
             "chinese",
             "indian",
@@ -902,7 +931,8 @@
         "dining": [
             "breakfast/brunch",
             "tapas",
-            "dinein"
+            "dinein",
+            "hangout"
         ],
         "dessert": [
             "icecream",
