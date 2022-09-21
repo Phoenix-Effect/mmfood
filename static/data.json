@@ -20,7 +20,8 @@
         {
             "name": "Rydberg",
             "photo": "srydberg.png",
-            "bio": "Canadian but Arizona native, how does that work? Research technician at Huijban lab."
+            "bio": "Canadian but Arizona native, how does that work? Research technician at Huijban lab.",
+            "heat": true
         },
         {
             "name": "Alice",
@@ -484,6 +485,18 @@
         {
             "name": "Akita Sushi",
             "tags": ["sushi"]
+        },
+        {
+            "name": "Xtreme Bean Coffee",
+            "tags": ["coffee", "hangout"]
+        },
+        {
+            "name": "Brick Road Coffee",
+            "tags": ["coffee" ]
+        },
+        {
+            "name": "Burger Rush",
+            "tags": ["burgers"]
         }
     ],
 
@@ -949,6 +962,7 @@
             "review": "Was expensive, like $20 for a sandwich, fries and drink."            
         },
         {
+<<<<<<< HEAD
             "reviewer": "Alice",
             "restaurant": "The Dhaba",
             "review": "I like it!"            
@@ -1027,16 +1041,30 @@
             "reviewer": "Miguel",
             "restaurant": "Paquime Street Food of Mexico",
             "review": "Great Mexican street food."            
+=======
+            "reviewer": "Rydberg",
+            "restaurant": "Xtreme Bean Coffee",
+            "review": "Its big, cheap, cool place to hang out, decent coffee. They all very nice people, they got bagels and cheesecakes."
+        },
+        {
+            "reviewer": "Rydberg",
+            "restaurant": "Brick Road Coffee",
+            "review": "I didn't know it existed, then i went there and went damn it is really good."
+>>>>>>> github/master
         },
         {
             "reviewer": "Lenora",
             "restaurant": "Burger Rush",
+<<<<<<< HEAD
             "review": "Great charboiled burgers right here in Tempe. Love their brocolli. They also do impossible burger now!"            
         },
         {
             "reviewer": "Samantha",
             "restaurant": "Akita Sushi",
             "review": "Decent sushi place."            
+=======
+            "review": "Local burger joint for charboiled burgers, used to love their fried brocalli! They also do impossible burgers."
+>>>>>>> github/master
         }
     ],
 
@@ -1053,6 +1081,7 @@
             "seafood",
             "fried chicken",
             "burgers",
+<<<<<<< HEAD
             "empanada",
             "bao",
             "hummus"
@@ -1060,6 +1089,11 @@
         "country": [
             "cajun",
             "american",
+=======
+            "coffee"
+        ],
+        "country": [
+>>>>>>> github/master
             "african",
             "chinese",
             "indian",
@@ -1077,7 +1111,8 @@
         "dining": [
             "breakfast/brunch",
             "tapas",
-            "dinein"
+            "dinein",
+            "hangout"
         ],
         "dessert": [
             "icecream",
