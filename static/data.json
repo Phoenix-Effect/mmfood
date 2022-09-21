@@ -98,7 +98,8 @@
         {
             "name": "Jackie",
             "photo": "jackie.jpg",
-            "bio": "Arizona native, likes to run fast. OG member of CEM."           
+            "bio": "Arizona native, likes to run fast. OG member of CEM.",
+            "veg": true          
         },
         {
             "name": "Rita",
@@ -109,6 +110,12 @@
             "name": "Vroni",
             "photo": "veronika.jpeg",
             "bio": "Ze German.",
+            "heat": true
+        },
+        {
+            "name": "Carrie",
+            "photo": "anon.png",
+            "bio": "Arizona native. Research Specialist in Trumble lab.",
             "heat": true
         }
     ],
@@ -308,11 +315,11 @@
         },
         {
             "name": "Hudson Eatery & Bar",
-            "tags": ["fries"]
+            "tags": ["fries", "bar"]
         },
         {
             "name": "Farm at South Mountain",
-            "tags": ["dinein"]
+            "tags": ["dinein", "american"]
         },
         {
             "name": "Joes Farm Grill",
@@ -409,6 +416,74 @@
         {
             "name": "Houstan Hot Chicken",
             "tags": ["fried chicken", "fries"]
+        },
+        {
+            "name": "Houstan Hot Chicken",
+            "tags": ["fried chicken", "fries"]
+        },
+        {
+            "name": "Yuphas Thai Kitchen",
+            "tags": ["thai"]
+        },
+        {
+            "name": "Zinque",
+            "tags": ["tapas", "french"]
+        },
+        {
+            "name": "Cafe Paris",
+            "tags": ["french", "dinein"]
+        },
+        {
+            "name": "Paris Rendez-vous",
+            "tags": ["french", "canele"]
+        },
+        {
+            "name": "Maskadores Taco Shop",
+            "tags": ["mexican", "taco"]
+        },
+        {
+            "name": "Baby Kays Cajun Kitchen",
+            "tags": ["seafood", "cajun"]
+        },
+        {
+            "name": "Joes Real BBQ",
+            "tags": ["bbq", "american"]
+        },
+        {
+            "name": "Organ Stop Pizza",
+            "tags": ["pizza", "dinein"]
+        },
+        {
+            "name": "Republica Empanada",
+            "tags": ["empanada", "latin"]
+        },
+        {
+            "name": "Cider Corps",
+            "tags": ["bar", "dinein"]
+        },
+        {
+            "name": "Happy Baos",
+            "tags": ["chinese", "bao"]
+        },
+        {
+            "name": "Thailys",
+            "tags": ["cambodian"]
+        },
+        {
+            "name": "Greek Wraps",
+            "tags": ["greek", "hummus"]
+        },
+        {
+            "name": "Paquime Street Food of Mexico",
+            "tags": ["mexican"]
+        },
+        {
+            "name": "Burger Rush",
+            "tags": ["burgers"]
+        },
+        {
+            "name": "Akita Sushi",
+            "tags": ["sushi"]
         }
     ],
 
@@ -872,6 +947,96 @@
             "reviewer": "Marky",
             "restaurant": "Houstan Hot Chicken",
             "review": "Was expensive, like $20 for a sandwich, fries and drink."            
+        },
+        {
+            "reviewer": "Alice",
+            "restaurant": "The Dhaba",
+            "review": "I like it!"            
+        },
+        {
+            "reviewer": "Carrie",
+            "restaurant": "Yuphas Thai Kitchen",
+            "review": "Just the best!"            
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Zinque",
+            "review": "Good Tapas"            
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Cafe Paris",
+            "review": "Looks like a nice French cafe."            
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Paris Rendez-vous",
+            "review": "They got the canele"            
+        },
+        {
+            "reviewer": "Lenora",
+            "restaurant": "Maskadores Taco Shop",
+            "review": "I'd recommend it!"            
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Baby Kays Cajun Kitchen",
+            "review": "Their crab cake is mad good and the live music is a bonus."            
+        },
+        {
+            "reviewer": "Cyril",
+            "restaurant": "Joes Real BBQ",
+            "review": "My go to for weekend lunches"            
+        },
+        {
+            "reviewer": "Jenn",
+            "restaurant": "Joes Real BBQ",
+            "review": "Great dine in place"            
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Organ Stop Pizza",
+            "review": "Alright pizza but they got a bigly Organ and have special performances on Christmas."            
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Republica Empanada",
+            "review": "Haven't gone here yet but heard many good things."            
+        },
+        {
+            "reviewer": "Lenora",
+            "restaurant": "Cider Corps",
+            "review": "Great date spot."            
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Happy Baos",
+            "review": "Homemade baos"            
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "Thailys",
+            "review": "Best Cambodian food according to N sources!"            
+        },
+        {
+            "reviewer": "Samantha",
+            "restaurant": "Greek Wraps",
+            "review": "This ain't no ordinary hummus"            
+        },
+        {
+            "reviewer": "Miguel",
+            "restaurant": "Paquime Street Food of Mexico",
+            "review": "Great Mexican street food."            
+        },
+        {
+            "reviewer": "Lenora",
+            "restaurant": "Burger Rush",
+            "review": "Great charboiled burgers right here in Tempe. Love their brocolli. They also do impossible burger now!"            
+        },
+        {
+            "reviewer": "Samantha",
+            "restaurant": "Akita Sushi",
+            "review": "Decent sushi place."            
         }
     ],
 
@@ -887,9 +1052,14 @@
             "bbq",
             "seafood",
             "fried chicken",
-            "burgers"
+            "burgers",
+            "empanada",
+            "bao",
+            "hummus"
         ],
-        "ethnic": [
+        "country": [
+            "cajun",
+            "american",
             "african",
             "chinese",
             "indian",
@@ -897,7 +1067,12 @@
             "mexican",
             "venezuelan",
             "filipino",
-            "saudi arabian"
+            "saudi arabian",
+            "thai",
+            "french",
+            "latin",
+            "cambodian",
+            "greek"
         ],
         "dining": [
             "breakfast/brunch",
@@ -906,7 +1081,8 @@
         ],
         "dessert": [
             "icecream",
-            "cheesecake"
+            "cheesecake",
+            "canele"
         ]
     }
 }
