@@ -116,10 +116,20 @@ def profile(username):
                     if username == l['reviewer']:
                         filtered.append(formatted[i][j][k])
 
+    de_dup = []
+    for f in filtered:
+        f['restaurant'] = f['reviews'][0]['restaurant']
+    
+    for f in filtered:
+        if len((list(filter(lambda hola:hola['restaurant'] == f['restaurant'], de_dup)))) > 0:
+            print("Duplicate", f['restaurant'])
+        else:
+            de_dup.append(f)
+
     context = {
         "title": f'Recommendations by {username}',
         "profile": list(filter(lambda person: person['name'] == username, bios))[0],
-        "big_data": filtered
+        "big_data": de_dup
     }
     return render_template( "profile.jinja", **context )
 
