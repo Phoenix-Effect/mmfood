@@ -118,6 +118,11 @@
             "photo": "anon.png",
             "bio": "Arizona native. Research Specialist in Trumble lab.",
             "heat": true
+        },
+        {
+            "name": "Noah",
+            "photo": "nsnyderm.png",
+            "bio": "From Washington State, knows food."
         }
     ],
 
@@ -501,6 +506,18 @@
         {
             "name": "Burger Rush",
             "tags": ["burgers"]
+        },
+        {
+            "name": "Little Miss BBQ",
+            "tags": ["bbq", "american"]
+        },
+        {
+            "name": "Hana Sushi",
+            "tags": ["sushi"]
+        },
+        {
+            "name": "Pa'la",
+            "tags": ["seafood", "woodfire"]
         }
     ],
 
@@ -1064,6 +1081,36 @@
             "reviewer": "Samantha",
             "restaurant": "Akita Sushi",
             "review": "Decent sushi place."            
+        },
+        {
+            "reviewer": "Noah",
+            "restaurant": "Bongiorno Bagels",
+            "review": "+1 (maybe more?) to this place. Best bagels I’ve had in AZ, although that isn’t a very high bar. I would eat them again (and I do), so maybe that means something?"            
+        },
+        {
+            "reviewer": "Noah",
+            "restaurant": "Little Miss BBQ",
+            "review": "Brisket melts in your mouth"            
+        },
+        {
+            "reviewer": "Noah",
+            "restaurant": "Pizzeria Bianco",
+            "review": "(Town & Country is my go-to location). Best pizza in AZ and up there across the US. Did you see the netflix special?"            
+        },
+        {
+            "reviewer": "Noah",
+            "restaurant": "Hana Sushi",
+            "review": "Phoenix (7th and Missouri - not the other hana location). Got short-listed for a James Beard award. So freaking good"            
+        },
+        {
+            "reviewer": "Noah",
+            "restaurant": "Pa'la",
+            "review": "their new location in downtown is amazing. They have awesome specials and delicious food/drink. You can also enjoy their homemade pasta, but the flame-cooked veggies/meats/fish are to die for."
+        },
+        {
+            "reviewer": "Noah",
+            "restaurant": "Clever Koi",
+            "review": "Has the best happy hour cocktails"
         }
     ],
 
@@ -1082,7 +1129,8 @@
             "burgers",
             "empanada",
             "bao",
-            "hummus"
+            "hummus",
+            "woodfire"
         ],
         "country": [
             "cajun",
