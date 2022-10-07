@@ -518,6 +518,10 @@
         {
             "name": "Pa'la",
             "tags": ["seafood", "woodfire"]
+        },
+        {
+            "name": "Back East Bagels",
+            "tags": ["bagels"]
         }
     ],
 
@@ -1111,6 +1115,11 @@
             "reviewer": "Noah",
             "restaurant": "Clever Koi",
             "review": "Has the best happy hour cocktails"
+        },
+        {
+            "reviewer": "India",
+            "restaurant": "Back East Bagels",
+            "review": "They aight bagels by NY standards."
         }
     ],
 
