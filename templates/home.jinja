@@ -5,7 +5,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Hello,
+          <a href="{{ url_for('home') }}">CEM Food Recommendations</a>
         </h1>
         <h2 class="subtitle">
           Recommendations overheard at the watercooler.
@@ -13,8 +13,10 @@
       </div>
     </div>
   </section>
+      
   <section class="section">
     <div class="container">
+    <span class="my-2 has-text-weight-bold">Last updated: {{ last_updated }}</span>
       <div class="columns">
         <div class="column is-3">
           <div class="box content">
@@ -40,12 +42,12 @@
               <figure class="image is-64x64 m-2">
                 <a href="{{ reviewer.name }}"><img class="is-rounded" title="{{ reviewer.name }} - {{ reviewer.bio }}"
                     src="static/profile/{% if reviewer.photo %}{{ reviewer.photo }}{% else %}anon.png{% endif %}">
-                    {% if reviewer.heat %}
-                    <span title="High heat tolerance" class="badge is-danger is-bottom-right">x</span>
-                    {% endif %}
-                    {% if reviewer.veg %}
-                    <span title="Vegetarian" class="badge is-success is-bottom-right">x</span>
-                    {% endif %}
+                  {% if reviewer.heat %}
+                  <span title="High heat tolerance" class="badge is-danger is-bottom-right">x</span>
+                  {% endif %}
+                  {% if reviewer.veg %}
+                  <span title="Vegetarian" class="badge is-success is-bottom-right">x</span>
+                  {% endif %}
               </figure></a>
             </div>
             {% endfor %}
@@ -93,15 +95,23 @@
               <div class="column is-one-third-desktop is-half-tablet is-full-mobile is-flex is-narrow">
                 <div class="card equal-height">
                   <header class="card-header">
-                    <h3 class="card-header-title m-2 has-text-success">
-                      {{ key3|title }}
+                    <h3 class="card-header-title {% if child3.address %}m-0 pb-0 {% else %} m-2 {% endif %} has-text-success">
+                      {{ key3|title }} 
                     </h3>
-                    <a href="#" class="card-header-icon" aria-label="more options">
-                      <span class="icon">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                      </span>
-                    </a>
                   </header>
+                    {% if child3.address %}
+                    <header class="card-header">
+                    <h4 class="card-header-title subtitle is-6 m-0 py-2">
+                    {{ child3.address }}
+                    </h4>
+                    </header>
+                    {% endif %}
+                    
+                    
+                    
+                    
+
+
                   <div class="card-content p-3">
                     <div class="content">
                       {% for review in child3.reviews %}
@@ -120,10 +130,22 @@
                               <a href="{{ review.reviewer }}" class="has-text-weight-bold">{{ review.reviewer }} </a>
                               <br>
                               {{ review.review }}
+                              <br>
+                              {% if review.date %}
+                              <time class="is-size-7 is-italic has-text-grey-light" datetime="{{ review.date }}">{{
+                                review.date | format_date }}</time>
+                              {% else %}
+                              <time class="is-size-7 is-italic has-text-grey-light" datetime="2022-09-1">Pre Sep,
+                                2022</time>
+                              {% endif %}
                             </p>
                           </div>
                         </div>
                       </article>
+                      {% if review.image %}
+                      <a href="{{ url_for('static', filename='images/' + review.image[0]) }}"><img
+                          src="{{ url_for('static', filename='images/' + review.image[0]) }}"></a>
+                      {% endif %}
                       {% endfor %}
                     </div>
                   </div>
@@ -153,6 +175,8 @@
     </div>
     </div>
   </section>
+
+  {# <pre>{{ big_data | prettyprint }}</pre> #}
 </body>
 
 </html>

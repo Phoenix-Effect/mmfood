@@ -1,20 +1,4 @@
-import pip
-import os
-
-
-# This is for cloudflare pages ---------
-def import_or_install(package):
-    try:
-        __import__(package)
-    except ImportError:
-        pip.main(['install', package])    
-
-
-if not os.environ['USER'] == 'suhail':
-    import_or_install('flask')
-    import_or_install('Frozen-Flask')
-    import_or_install('Flask-FlatPages')
-# --------------------------------------
+from datetime import datetime
 
 import json
 from flask import Flask, render_template
@@ -23,6 +7,9 @@ from flask_flatpages import FlatPages
 from collections import OrderedDict
 import pprint 
 import sys
+
+
+
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -36,6 +23,22 @@ taxonomies = data['taxonomies']
 reviews = data['reviews']
 bios = data['reviewers']
 restaurants = data['restaurants']
+
+@app.template_filter()
+def format_date(date_str):
+    date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+    return date_obj.strftime('%b, %Y')
+
+@app.template_filter('prettyprint')
+def prettyprint_filter(value):
+    return json.dumps(value, indent=4)
+
+def get_address_from_name(name):
+    for i in restaurants:
+        if i['name'] == name:
+            if 'address' in i:
+                return i['address']
+    return False
 
 def get_formatted_data():
     taxonomies = data['taxonomies']
@@ -78,6 +81,8 @@ def get_formatted_data():
                 restaurants_in_this_cat = list(filter(lambda rest: cat in rest['tags'], unique_restaurants_with_tag))
                 for j in restaurants_in_this_cat:
                     frontend[categories][cat][j['name']] = {}
+                    if get_address_from_name(j['name']):
+                        frontend[categories][cat][j['name']]['address'] = get_address_from_name(j['name'])
                     frontend[categories][cat][j['name']]['comments'] = len(list(
                         filter(lambda rest: j['name'] in rest['restaurant'], reviews)))
                     frontend[categories][cat][j['name']]['reviews'] = list(
@@ -99,7 +104,8 @@ def home():
     context = {
         "title": "Food, we need food!",
         "reviewers": data['reviewers'],
-        "big_data": get_formatted_data()
+        "big_data": get_formatted_data(),
+        "last_updated": datetime.utcnow().strftime('%b %-d, %Y'),
     }
     return render_template( "home.jinja", **context )
 

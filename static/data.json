@@ -123,6 +123,12 @@
             "name": "Noah",
             "photo": "nsnyderm.png",
             "bio": "From Washington State, knows food."
+        },
+        {
+            "name": "David",
+            "photo": "dajinks.png",
+            "bio": "Knows about New Mexican food and video cameras!",
+            "heat": true
         }
     ],
 
@@ -522,10 +528,46 @@
         {
             "name": "Back East Bagels",
             "tags": ["bagels"]
+        },
+        {
+            "name": "The Octillo",
+            "tags": ["dinein", "breakfast/brunch"],
+            "address": "3243 N 3rd St., Phoenix, AZ 85012"        
+        },
+        {
+            "name": "El Chorro",
+            "tags": ["dinein", "breakfast/brunch"],
+            "address": "5550 East Lincoln Drive Paradise Valley, AZ 85253"        
+        },
+        {
+            "name": "Si Senor",
+            "tags": ["mexican"],
+            "address": "600 N Alma School Rd, Chandler, AZ 85224"        
         }
     ],
 
     "reviews": [
+        {
+            "reviewer": "David",
+            "restaurant": "Si Senor",
+            "review": "This ain't Meixcan food, this is New Mexican food from my home town!",
+            "date": "2023-12-20",
+            "image": ["sisenor.jpeg"]
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "El Chorro",
+            "review": "Excellent view though its a bit on the pricey side. Bring your upper class out of town friends here.",
+            "date": "2024-02-04",
+            "image": ["elchorro.jpeg"]
+        },
+        {
+            "reviewer": "Suhail",
+            "restaurant": "The Octillo",
+            "review": "Nice quiet seating, smoked salmon was banging plus it got served on a cutting board. Bonus: There is a cat that roams around the restaurant that you can pet.",
+            "date": "2024-01-21",
+            "image": ["octillo.jpeg"]
+        },
         {
             "reviewer": "Marky",
             "restaurant": "The Dhaba",
