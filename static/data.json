@@ -544,10 +544,27 @@
             "name": "Si Senor",
             "tags": ["mexican"],
             "address": "600 N Alma School Rd, Chandler, AZ 85224"        
+        },
+        {
+            "name": "Rice Paddy",
+            "tags": ["vietnamese", "dinein"],
+            "address": "6219 N 7th St, Phoenix, AZ 85014"        
         }
     ],
 
     "reviews": [
+        {
+            "reviewer": "Marky",
+            "restaurant": "Rice Paddy",
+            "review": "Got a stirfry, they got that wok hei.",
+            "date": "2024-02-07"
+        },
+        {
+            "reviewer": "Marky",
+            "restaurant": "Happy Baos",
+            "review": "Sick soup dumblings.",
+            "date": "2024-02-07"
+        },
         {
             "reviewer": "Marky",
             "restaurant": "Bagel Man",
@@ -1205,7 +1222,8 @@
             "french",
             "latin",
             "cambodian",
-            "greek"
+            "greek",
+            "vietnamese"
         ],
         "dining": [
             "breakfast/brunch",
