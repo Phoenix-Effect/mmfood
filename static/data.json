@@ -32,7 +32,8 @@
         {
             "name": "Jeff",
             "photo": "jdjense9.png",
-            "bio": "Highest brow."
+            "bio": "Highest brow.",
+            "veg": true
         },
         {
             "name": "Jenn",
