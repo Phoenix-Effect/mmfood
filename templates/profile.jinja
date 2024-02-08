@@ -38,7 +38,7 @@
                         <div class="columns is-multiline">
                             {% for item in big_data | sort(attribute='comments', reverse=True) %}
                             <div
-                                class="column is-one-quarter-desktop is-one-third-tablet is-full-mobile is-flex is-narrow">
+                                class="column is-one-third-desktop is-one-third-tablet is-full-mobile is-flex is-narrow">
                                 <div class="card equal-height">
                                     <header class="card-header">
                                         <h3 class="card-header-title m-2">
@@ -69,10 +69,22 @@
                                                                 class="has-text-weight-bold">{{ review.reviewer }} </a>
                                                             <br>
                                                             {{ review.review }}
+                                                                                          <br>
+                              {% if review.date %}
+                              <time class="is-size-7 is-italic has-text-grey-light" datetime="{{ review.date }}">{{
+                                review.date | format_date }}</time>
+                              {% else %}
+                              <time class="is-size-7 is-italic has-text-grey-light" datetime="2022-09-1">Pre Sep,
+                                2022</time>
+                              {% endif %}
                                                         </p>
                                                     </div>
                                                 </div>
                                             </article>
+                                                                  {% if review.image %}
+                      <a href="{{ url_for('static', filename='images/' + review.image[0]) }}"><img
+                          src="{{ url_for('static', filename='images/' + review.image[0]) }}"></a>
+                      {% endif %}
                                             {% endfor %}
                                         </div>
                                     </div>
@@ -100,6 +112,8 @@
         </div>
         </div>
     </section>
+
+    {% include 'footer.jinja' %}
 </body>
 
 </html>

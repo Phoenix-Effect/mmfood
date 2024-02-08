@@ -13,10 +13,77 @@
       </div>
     </div>
   </section>
-      
-  <section class="section">
+
+  <section class="section p-0 m-0">
     <div class="container">
-    <span class="my-2 has-text-weight-bold">Last updated: {{ last_updated }}</span>
+    <h3 class="is-size-3">Recent reviews</h3>
+      <div class="columns is-multiline">
+
+          {% for review in recent_reviews %}
+              <div class="column is-one-third-desktop is-half-tablet is-full-mobile is-flex is-narrow">
+                <div class="card equal-height">
+                  <header class="card-header">
+                    <h3
+                      class="card-header-title m-2 has-text-success">
+                       {{ review.restaurant }}
+                    </h3>
+                  </header>
+
+                  <div class="card-content p-3">
+                    <div class="content">
+                      
+                      <article class="media ">
+                        <figure class="media-left ml-0 mr-3 mt-1">
+                          <p class="image is-48x48">
+                            <a href="{{ review.reviewer }}">
+                              <img class="is-rounded" title="reviewer"
+                                src="static/profile/{% if review.photo %}{{ review.photo }}{% else %}anon.png{% endif %}">
+                            </a>
+                          </p>
+                        </figure>
+                        <div class="media-content">
+                          <div class="content">
+                            <p>
+                              <a href="{{ review.reviewer }}" class="has-text-weight-bold"> {{ review.reviewer }} </a>
+                              <br>
+                               {{ review.review }}
+                              <br>
+
+                              <time class="is-size-7 is-italic has-text-grey-light" datetime="{{ review.date }}"> {{
+                                review.date | format_date }} </time>
+
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+
+                    </div>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="card-footer-item taggers">
+                      <div class="tags">
+                       
+                       {% for tag in review.tags%}
+                        <span class="tag is-primary mr-2">
+                          {{ tag }}
+                        </span>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+
+              </div>
+
+          {% endfor %}
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-0">
+    <div class="container">
+      
       <div class="columns">
         <div class="column is-3">
           <div class="box content">
@@ -95,21 +162,22 @@
               <div class="column is-one-third-desktop is-half-tablet is-full-mobile is-flex is-narrow">
                 <div class="card equal-height">
                   <header class="card-header">
-                    <h3 class="card-header-title {% if child3.address %}m-0 pb-0 {% else %} m-2 {% endif %} has-text-success">
-                      {{ key3|title }} 
+                    <h3
+                      class="card-header-title {% if child3.address %}m-0 pb-0 {% else %} m-2 {% endif %} has-text-success">
+                      {{ key3|title }}
                     </h3>
                   </header>
-                    {% if child3.address %}
-                    <header class="card-header">
+                  {% if child3.address %}
+                  <header class="card-header">
                     <h4 class="card-header-title subtitle is-6 m-0 py-2">
-                    {{ child3.address }}
+                      {{ child3.address }}
                     </h4>
-                    </header>
-                    {% endif %}
-                    
-                    
-                    
-                    
+                  </header>
+                  {% endif %}
+
+
+
+
 
 
                   <div class="card-content p-3">
@@ -176,7 +244,11 @@
     </div>
   </section>
 
-  {# <pre>{{ big_data | prettyprint }}</pre> #}
+  
+  {# <pre>{{ recent_reviews | prettyprint }}</pre> #}
+
+{% include 'footer.jinja' %}
+
 </body>
 
 </html>

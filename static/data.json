@@ -6,6 +6,12 @@
             "bio": "I am not from around but boy do I not know good food. I do things at CEM."
         },
         {
+            "name": "Raquel",
+            "photo": "anon.png",
+            "bio": "Arizona native!",
+            "heat": true
+        },
+        {
             "name": "Cyril",
             "photo": "cversoza.png",
             "bio": "Cyrilla from Manilla who loves a thrilla. PhD student in Pfeifer lab.",
@@ -136,251 +142,313 @@
     "restaurants": [
         {
             "name": "The Dhaba",
-            "tags": ["indian", "close to campus"]
+            "tags": ["indian", "close to campus"],
+            "address": "1872 Apache Blvd, Tempe, AZ 85281"
         },
         {
             "name": "MedFresh Grill",
-            "tags": ["turkish", "close to campus"]
+            "tags": ["turkish", "close to campus"],
+            "address": "414 S Mill Ave #117, Tempe, AZ 85281"
         },
         {
             "name": "My Pie",
-            "tags": ["pizza", "lunchbreak"]
+            "tags": ["pizza", "close to campus"],
+            "address": "777 S College Ave, Tempe, AZ 85281"
         },
         {
             "name": "Postino",
-            "tags": ["bar", "drinks after work"]
+            "tags": ["bar", "close to campus"],
+            "address": "615 S College Ave, Tempe, AZ 85281"
         },
         {
             "name": "Pedal Haus Brewery",
-            "tags": ["bar", "drinks after work"]
+            "tags": ["bar", "close to campus"],
+            "address": "730 S Mill Ave #102, Tempe, AZ 85281"
         },
         {
             "name": "Casey Moores Oyester House",
-            "tags": ["bar", "drinks after work"]
+            "tags": ["bar", "close to campus"],
+            "address": "850 S Ash Ave, Tempe, AZ 85281"
         },
         {
             "name": "Spinatos Pizzeria",
-            "tags": ["pizza", "fine dining"]
+            "tags": ["pizza", "fine dining"],
+            "address": "96 S Rockford Dr, Tempe, AZ 85288"
         },
         {
             "name": "Otto Pizza & Pastry",
-            "tags": ["pizza"]
+            "tags": ["pizza", "close to campus"],
+            "address": "804 S Ash Ave, Tempe, AZ 85281"
         },
         {
             "name": "CIBO",
-            "tags": ["pizza", "datenight"]
+            "tags": ["pizza", "datenight"],
+            "address": "603 N 5th Ave, Phoenix, AZ 85003"
         },
         {
             "name": "Pizzeria Bianco",
-            "tags": ["pizza"]
+            "tags": ["pizza"],
+            "address": "623 E Adams St, Phoenix, AZ 85004"
         },
         {
             "name": "Pomo Pizzeria",
-            "tags": ["pizza", "vegan"]
+            "tags": ["pizza", "vegan"],
+            "address": "705 N 1st St UNIT 120, Phoenix, AZ 85004"
         },
         {
             "name": "Brooklyn Vs Pizza",
-            "tags": ["pizza"]
+            "tags": ["pizza"],
+            "address": "20911 E Rittenhouse Rd, Queen Creek, AZ 85142"
         },
         {
             "name": "Craft 64",
-            "tags": ["pizza"]
+            "tags": ["pizza"],
+            "address": "68 W Buffalo St, Chandler, AZ 85225"
         },
         {
             "name": "Sals Gilbert Pizza",
-            "tags": ["pizza"]
+            "tags": ["pizza"],
+            "address": "1150 S Gilbert Rd, Gilbert, AZ 85296"
         },
         {
             "name": "Angels Trumpet",
-            "tags": ["bar", "chicken wings"]
+            "tags": ["bar", "chicken wings"],
+            "address": "810 N 2nd St, Phoenix, AZ 85004"
         },
         {
             "name": "Dirty Drummer",
-            "tags": ["bar", "chicken wings"]
+            "tags": ["bar", "chicken wings"],
+            "address": "2303 N 44th St, Phoenix, AZ 85008"
         },
         {
             "name": "Zesty Zzeeks",
-            "tags": ["chicken wings"]
+            "tags": ["chicken wings"],
+            "address": "3139 S Mill Ave, Tempe, AZ 85282"
         },
         {
             "name": "Reathrey Sekong",
-            "tags": ["chicken wings", "cambodian"]
+            "tags": ["chicken wings", "cambodian"],
+            "address": "1312 E Indian School Rd, Phoenix, AZ 85014"
         },
         {
             "name": "Lou Malnatis",
-            "tags": ["pizza"]
+            "tags": ["pizza"],
+            "address": "27 S McClintock Dr, Tempe, AZ 85288"
         },
         {
             "name": "Proof Bread",
-            "tags": ["bakery"]
+            "tags": ["bakery"],
+            "address": "125 W Main St, Mesa, AZ 85201"
         },
         {
             "name": "Noble Eatery",
-            "tags": ["bakery"]
+            "tags": ["bakery"],
+            "address": "4525 N 24th St, Phoenix, AZ 85016"
         },
         {
             "name": "Breadsmith",
-            "tags": ["bakery", "dessert"]
+            "tags": ["bakery", "dessert"],
+            "address": "10355 N La Cañada Dr, Oro Valley, AZ 85737"
         },
         {
             "name": "Mikado Sushi",
-            "tags": ["sushi"]
+            "tags": ["sushi"],
+            "address": "3125 S Alma School Rd #3b, Chandler, AZ 85248"
         },
         {
             "name": "Bongiorno Bagels",
-            "tags": ["bagels"]
+            "tags": ["bagels"],
+            "address": "3107 S Gilbert Rd #101, Gilbert, AZ 85295"
         },
         {
             "name": "Bagel Man",
-            "tags": ["bagels"]
+            "tags": ["bagels"],
+            "address": "5035 E Elliot Rd, Phoenix, AZ 85044"
         },
         {
             "name": "Kungfu Ramen",
-            "tags": ["ramen/noodles"]           
+            "tags": ["ramen/noodles"],
+            "address": "1845 E Broadway Rd UNIT 127, Tempe, AZ 85282"
         },
         {
             "name": "West Hut",
-            "tags": ["african"]           
+            "tags": ["african"],
+            "address": "3110 N Central Ave Ste D-183, Phoenix, AZ 85012"      
         },
         {
             "name": "Manna BBQ",
-            "tags": ["korean"]           
+            "tags": ["korean"],
+            "address": "1135 S Dobson Rd, Mesa, AZ 85202"
         },
         {
             "name": "Noodleholics",
-            "tags": ["ramen/noodles"]           
+            "tags": ["ramen/noodles"],
+            "address": "3502 E Grant Rd, Tucson, AZ 85716"         
         },
         {
             "name": "Old Town Taste",
-            "tags": ["chinese"]           
+            "tags": ["chinese"],
+            "address": "1845 E Broadway Rd, Tempe, AZ 85281"       
         },
         {
             "name": "Fly Bye",
-            "tags": ["pizza"]           
+            "tags": ["pizza"],
+            "address": "3912 E Camelback Rd Ste. #100, Phoenix, AZ 85018"
         },
         {
             "name": "Tapas Papa Frita",
-            "tags": ["tapas"]
+            "tags": ["tapas"],
+            "address": "7114 E Stetson Dr #210, Scottsdale, AZ 85251"
         },
         {
             "name": "Mangos Mexican Cafe",
-            "tags": ["mexican"]
+            "tags": ["mexican"],
+            "address": "44 W Main St, Mesa, AZ 85201"
         },
         {
             "name": "Que Chevere",
-            "tags": ["venezuelan"]
+            "tags": ["venezuelan"],
+            "address": "142 W Main St, Mesa, AZ 85201"
         },
         {
             "name": "La Santisima",
-            "tags": ["mexican"]
+            "tags": ["mexican"],
+            "address": "4117 N 16th St, Phoenix, AZ 85016"
         },
         {
             "name": "Ramen Kagawa",
-            "tags": ["ramen/noodles" ]
+            "tags": ["ramen/noodles" ],
+            "address": "111 W Monroe St #130, Phoenix, AZ 85003"
         },
         {
             "name": "Sushi Vibe",
-            "tags": ["sushi"]
+            "tags": ["sushi"],
+            "address": "100 E Camelback Rd #154, Phoenix, AZ 85012"
         },
         {
             "name": "Chelseas Kitchen",
-            "tags": ["dinein"]
+            "tags": ["dinein"],
+            "address": "5040 N 40th St, Phoenix, AZ 85018"
         },
         {
             "name": "Clever Koi",
-            "tags": ["ramen/noodles"]
+            "tags": ["ramen/noodles"],
+            "address": "4236 N Central Ave #100, Phoenix, AZ 85012"
         },
         {
             "name": "Teds Hot Dogs",
-            "tags": ["hotdog"]
+            "tags": ["hotdog"],
+            "address": "1755 E Broadway Rd, Tempe, AZ 85282"
         },
         {
             "name": "Passage to India",
-            "tags": ["indian"]
+            "tags": ["indian"],
+            "address": "909 E Elliot Rd, Tempe, AZ 85284"
         },
         {
             "name": "Gallo Blanco",
-            "tags": ["mexican"]
+            "tags": ["mexican"],
+            "address": "928 E Pierce St, Phoenix, AZ 85006"
         },
         {
             "name": "Perch Brewery",
-            "tags": ["tapas"]
+            "tags": ["tapas"],
+            "address": "720 W Ray Rd, Gilbert, AZ 85233"
         },
         {
             "name": "Handels Homemade Ice Cream",
-            "tags": ["icecream"]
+            "tags": ["icecream"],
+            "address": "2000 E Rio Salado Pkwy Suite 1062, Tempe, AZ 85288"
         },
         {
             "name": "Arizona Wilderness Gilbert Brewpub",
-            "tags": ["fries"]
+            "tags": ["fries"],
+            "address": "721 N Arizona Ave, Gilbert, AZ 85233"
         },
         {
             "name": "Ajo Als Mexican Cafe",
-            "tags": ["mexican"]
+            "tags": ["mexican"],
+            "address": "5101 N 16th St, Phoenix, AZ 85016"
         },
         {
             "name": "Los Favoritos Taco Shop",
-            "tags": ["mexican", "breakfast/brunch"]
+            "tags": ["mexican", "breakfast/brunch"],
+            "address": "5865 W Ray Rd #11, Chandler, AZ 85226"
         },
         {
             "name": "Taco Nazo",
-            "tags": ["mexican"]
+            "tags": ["mexican"],
+            "address": "1405 W Southern Ave, Tempe, AZ 85282"
         },
         {
             "name": "Hudson Eatery & Bar",
-            "tags": ["fries", "bar"]
+            "tags": ["fries", "bar"],
+            "address": "1601 E Apache Blvd, Tempe, AZ 85281"
         },
         {
             "name": "Farm at South Mountain",
-            "tags": ["dinein", "american"]
+            "tags": ["dinein", "american"],
+            "address": "6106 S 32nd St, Phoenix, AZ 85042"
         },
         {
             "name": "Joes Farm Grill",
-            "tags": ["dinein", "breakfast/brunch"]
+            "tags": ["dinein", "breakfast/brunch"],
+            "address": "3000 E Ray Rd, Gilbert, AZ 85296"
         },
         {
             "name": "Toms BBQ",
-            "tags": ["bbq"]
+            "tags": ["bbq"],
+            "address": "115 E Baseline Rd, Tempe, AZ 85283"
         },
         {
             "name": "Angies Lobster",
-            "tags": ["seafood"]
+            "tags": ["seafood"],
+            "address": "835 W Baseline Rd, Tempe, AZ 85283"
         },
         {
             "name": "JINYA Ramen Bar",
-            "tags": ["ramen/noodles"]
+            "tags": ["ramen/noodles"],
+            "address": "130 S Arizona Ave #1, Chandler, AZ 85225"
         },
         {
             "name": "eegees",
-            "tags": ["fries"]
+            "tags": ["fries"],
+            "address": "3535 E Baseline Rd, Gilbert, AZ 85234"
         },
         {
             "name": "Banhams Cheesecake",
-            "tags": ["cheesecake"]
+            "tags": ["cheesecake"],
+            "address": "2836 E Indian School Rd STE A3, Phoenix, AZ 85016"
         },
         {
             "name": "Nishikawa Ramen",
-            "tags": ["ramen/noodles"]
+            "tags": ["ramen/noodles"],
+            "address": "3141 E Indian School Rd #110, Phoenix, AZ 85016"
         },
         {
             "name": "Casa Filipina Bakeshop",
-            "tags": ["filipino"]
+            "tags": ["filipino"],
+            "address": "3531 W Thunderbird Rd, Phoenix, AZ 85053"
         },
         {
             "name": "Lutong Bahay",
-            "tags": ["filipino"]
+            "tags": ["filipino"],
+            "address": "9250 N 43rd Ave Ste 14, Glendale, AZ 85302"
         },
         {
             "name": "Freddys Frozen Custard & Steakburgers",
-            "tags": ["fries"]
+            "tags": ["fries", "chain"],
+            "address": "1405 N Arizona Ave, Gilbert, AZ 85233"
         },
         {
             "name": "Jollibee",
-            "tags": ["filipino", "fried chicken"]
+            "tags": ["filipino", "fried chicken", "chain"],
+            "address": "2800 E Germann Rd, Chandler, AZ 85286"
         },
         {
             "name": "Zinburger",
-            "tags": ["burgers"]
+            "tags": ["burgers", "chain"],
+            "address": "344 N Gilbert Rd, Gilbert, AZ 85234"
         },
         {
             "name": "Kopps Frozen Custard",
@@ -553,6 +621,12 @@
     ],
 
     "reviews": [
+        {
+            "reviewer": "Raquel",
+            "restaurant": "Manna BBQ",
+            "review": "Its really good!",
+            "date": "2023-11-01"
+        },
         {
             "reviewer": "Marky",
             "restaurant": "Rice Paddy",

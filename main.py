@@ -99,6 +99,14 @@ def get_profile_reviews(username):
 
     return filtered_reviews
 
+def get_recent_reviews():
+    # Filter out reviews that do not contain a 'date' key
+    reviews_with_date = [review for review in reviews if 'date' in review]
+    # Sort the filtered reviews by 'date' in descending order
+    sorted_reviews = sorted(reviews_with_date, key=lambda x: x['date'], reverse=True)
+    # Return the top 3 elements
+    return sorted_reviews[:3]
+
 @app.route("/")
 def home():
     context = {
@@ -106,6 +114,7 @@ def home():
         "reviewers": data['reviewers'],
         "big_data": get_formatted_data(),
         "last_updated": datetime.utcnow().strftime('%b %-d, %Y'),
+        "recent_reviews": get_recent_reviews()
     }
     return render_template( "home.jinja", **context )
 
@@ -135,7 +144,8 @@ def profile(username):
     context = {
         "title": f'Recommendations by {username}',
         "profile": list(filter(lambda person: person['name'] == username, bios))[0],
-        "big_data": de_dup
+        "big_data": de_dup,
+        "last_updated": datetime.utcnow().strftime('%b %-d, %Y'),
     }
     return render_template( "profile.jinja", **context )
 
