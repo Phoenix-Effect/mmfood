@@ -141,6 +141,11 @@
 
     "restaurants": [
         {
+            "name": "La Santisima",
+            "tags": ["meixcan", "tacos"],
+            "address": "4117 N 16th St, Phoenix, AZ 85016"
+        },
+        {
             "name": "The Dhaba",
             "tags": ["indian", "close to campus"],
             "address": "1872 Apache Blvd, Tempe, AZ 85281"
@@ -621,6 +626,12 @@
     ],
 
     "reviews": [
+        {
+            "reviewer": "Jacob",
+            "restaurant": "La Santisima",
+            "review": "A plethero of delicious tacos, best salsa in the state.",
+            "date": "2024-03-01"
+        },
         {
             "reviewer": "Raquel",
             "restaurant": "Manna BBQ",
